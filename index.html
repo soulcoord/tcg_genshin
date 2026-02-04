@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>七圣召唤 - 实战对局</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="game-board" class="genshin-board">
+        
+        <!-- 1. 左侧边栏：牌库与回合指示 -->
+        <div class="phase-sidebar">
+            
+            <!-- 对手信息区 -->
+            <div class="sidebar-section opponent-section">
+                <!-- 对手牌库 -->
+                <div class="deck-stack opponent-deck">
+                    <div class="card-back"></div>
+                </div>
+                <!-- 对手骰子计数 -->
+                <div class="dice-counter" id="opp-dice-count">8</div>
+            </div>
+
+            <!-- 回合指针 (中间) -->
+            <div class="turn-indicator-container">
+                <!-- 指针：通过 CSS 类 .turn-p1 (指向我方) 或 .turn-p2 (指向敌方) 控制旋转 -->
+                <div class="turn-pointer turn-p1" id="turn-pointer">
+                    <!-- 指针图标 -->
+                </div>
+                <div class="phase-text" id="phase-text">我的回合</div>
+            </div>
+
+            <!-- 玩家信息区 -->
+            <div class="sidebar-section player-section">
+                <!-- 玩家骰子计数 -->
+                <div class="dice-counter" id="player-dice-count">8</div>
+                <!-- 玩家牌库 -->
+                <div class="deck-stack player-deck">
+                    <div class="card-back"></div>
+                </div>
+            </div>
+
+            <!-- 结束回合按钮 (保留在左侧) -->
+            <div class="action-buttons">
+                <button id="btn-end-turn" class="btn-genshin">
+                    <span class="btn-text">结束</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 支援区：已移除派蒙卡片，保留空槽位 -->
+        <div class="support-zone left-side-layer" id="support-zone">
+            <div class="support-slot"></div>
+            <div class="support-slot"></div>
+            <div class="support-slot"></div>
+            <div class="support-slot"></div>
+        </div>
+
+        <!-- 2. 中央战场区域 -->
+        <div class="battle-field">
+            <!-- 上方：对手区域 -->
+            <div class="char-zone opponent-zone" id="opponent-zone">
+                <!-- JS 动态插入对手卡牌 -->
+            </div>
+
+            <!-- 下方：我方区域 -->
+            <div class="char-zone player-zone">
+                <!-- 后台角色左 -->
+                <div class="card character-card standby" data-empty="true"></div>
+                
+                <!-- 出战角色 -->
+                <div class="card character-card active" id="active-char">
+                    <div class="card__visual">
+                        <div class="char-img"></div> 
+                    </div>
+                    <div class="card__info">
+                        <div class="card__name">载入中...</div>
+                        <div class="status-badges">
+                            <div class="badge hp-badge">10</div>
+                            <div class="badge energy-badge">⚡ 0/3</div>
+                        </div>
+                    </div>
+                    <div class="card__hp-bar-container">
+                        <div class="card__hp-fill"></div>
+                    </div>
+                </div>
+
+                <!-- 后台角色右 -->
+                <div class="card character-card standby" data-empty="true"></div>
+            </div>
+        </div>
+
+        <!-- 3. 右侧区域：骰子与技能 -->
+        <div class="right-hud-layer">
+            <!-- 右上角：元素骰子池 -->
+            <div class="dice-zone" id="dice-container"></div>
+
+            <!-- 右下角：技能面板 -->
+            <div class="skill-zone">
+                <div class="skill-btn normal-atk" title="普通攻击">
+                    <div class="skill-icon">A</div> 
+                    <div class="skill-cost-badge">1</div>
+                </div>
+                <div class="skill-btn elem-skill" title="元素战技">
+                    <div class="skill-icon">E</div>
+                    <div class="skill-cost-badge">3</div>
+                </div>
+                <div class="skill-btn elem-burst" title="元素爆发">
+                    <div class="skill-icon">Q</div>
+                    <div class="skill-cost-badge">3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 底部 HUD：手牌 -->
+        <div class="bottom-hud">
+            <div class="hand-cards-container" id="hand-area"></div>
+        </div>
+
+    </div>
+
+    <div id="drag-layer"></div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
