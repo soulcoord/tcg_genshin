@@ -42,7 +42,26 @@ export function initView() {
     const btnEnd = document.getElementById('btn-end-turn');
     if (btnEnd) {
         btnEnd.addEventListener('click', () => {
-            globalBus.emit('ACTION_END_TURN');
+            globalBus.emit('ACTION_END_ROUND');
+        });
+    }
+
+    const btnNormal = document.querySelector('.skill-btn.normal-atk');
+    if (btnNormal) {
+        btnNormal.addEventListener('click', () => {
+            globalBus.emit('ACTION_USE_SKILL', { skillId: 'normal' });
+        });
+    }
+    const btnSkill = document.querySelector('.skill-btn.elem-skill');
+    if (btnSkill) {
+        btnSkill.addEventListener('click', () => {
+            globalBus.emit('ACTION_USE_SKILL', { skillId: 'skill' });
+        });
+    }
+    const btnBurst = document.querySelector('.skill-btn.elem-burst');
+    if (btnBurst) {
+        btnBurst.addEventListener('click', () => {
+            globalBus.emit('ACTION_USE_SKILL', { skillId: 'burst' });
         });
     }
 
@@ -209,7 +228,8 @@ function updateTurnPointer(phase) {
 function checkGameOver(targetChar) {
     if (targetChar.hp <= 0) {
         setTimeout(() => {
-            alert(targetChar.id === 'char_hilichurl' ? "胜利！" : "失败！");
+            const isOpponent = Boolean(gameState.players.p2.characters[targetChar.id]);
+            alert(isOpponent ? "胜利！" : "失败！");
             globalBus.emit('GAME_OVER');
         }, 300);
     }

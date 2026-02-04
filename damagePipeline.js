@@ -130,7 +130,7 @@ export class DamagePipeline {
         // 检查我方 Combat Status
         const player = Object.values(gameState.players).find(p => p.characters[ctx.attacker.id]);
         if (player) {
-            const catalyzeField = player.combatStatuses.find(s => s.name === '激化领域');
+        const catalyzeField = player.combatStatuses.find(s => s.name === '\u6fc0\u5316\u9886\u57df');
             if (catalyzeField && (ctx.elementType === 'Electro' || ctx.elementType === 'Dendro')) {
                 ctx.damageValue += 1;
                 ctx.log.push("状态效果(激化领域): +1");
@@ -141,14 +141,14 @@ export class DamagePipeline {
     static stepMitigation(ctx) {
         // 1. 角色状态减伤 (e.g. 莲花酥 - 本回合下一次受到的伤害-3)
         // 注意：这通常在受击时触发。这里假设 statuses 包含此类buff
-        const lotusIndex = ctx.target.statuses.findIndex(s => s.name === '莲花酥');
+        const lotusIndex = ctx.target.statuses.findIndex(s => s.name === '\u83b2\u82b1\u9165');
         if (lotusIndex !== -1) {
             const reduce = 3;
             const actualReduce = Math.min(ctx.damageValue, reduce);
             ctx.damageValue -= actualReduce;
             ctx.log.push(`状态效果(莲花酥): -${actualReduce}`);
             // 莲花酥通常是一次性的，需标记移除 (在外部处理移除逻辑，这里只计算)
-            ctx.sideEffects.push({ type: 'REMOVE_STATUS', targetId: ctx.target.id, statusName: '莲花酥' });
+            ctx.sideEffects.push({ type: 'REMOVE_STATUS', targetId: ctx.target.id, statusName: '\u83b2\u82b1\u9165' });
         }
     }
 
