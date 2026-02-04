@@ -68,6 +68,10 @@ export function initView() {
         if (payload.prop === 'phase') {
             updateTurnPointer(payload.value);
         }
+        // 回合权变化 -> 更新指针
+        if (payload.prop === 'activePlayerId') {
+            updateTurnPointer(gameState.phase);
+        }
     });
 }
 
@@ -187,12 +191,15 @@ function updateTurnPointer(phase) {
     
     if (!pointer) return;
 
-    if (phase === 'PHASE_OPPONENT_TURN') {
+    const isMyTurn = (phase === 'PHASE_ACTION' && gameState.activePlayerId === 'p1') || phase === 'PHASE_ROLL';
+    const isOpponentTurn = (phase === 'PHASE_ACTION' && gameState.activePlayerId === 'p2');
+
+    if (isOpponentTurn) {
         pointer.classList.remove('turn-p1');
         pointer.classList.add('turn-p2');
         if (phaseText) phaseText.textContent = "对手回合";
     } 
-    else if (phase === 'PHASE_ACTION_IDLE' || phase === 'PHASE_ROLL') {
+    else if (isMyTurn) {
         pointer.classList.add('turn-p1');
         pointer.classList.remove('turn-p2');
         if (phaseText) phaseText.textContent = "我的回合";
@@ -265,9 +272,10 @@ function updateHpBar(charState, newHp) {
 }
 
 function renderPlayerActiveChar() {
-    const p1Char = gameState.players.p1.characters['char_diluc'];
+    const p1 = gameState.players.p1;
+    const p1Char = p1.characters[p1.activeCharId];
     const el = document.getElementById('active-char');
-    if (el) {
+    if (el && p1Char) {
         el.dataset.id = p1Char.id;
         el.querySelector('.card__name').textContent = p1Char.name;
         const visual = el.querySelector('.card__visual');

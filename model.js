@@ -2,44 +2,81 @@
 // 数据模型层：定义游戏初始状态
 import { globalBus } from './eventBus.js';
 
+// 定义初始卡组 (简化版，实际应有30张)
+const STARTING_DECK = [
+    { id: 'wp_wolf', name: "狼的末路", type: 'Weapon', cost: { count: 3, type: 'Matching' } },
+    { id: 'event_paimon', name: "派蒙", type: 'Support', cost: { count: 3, type: 'Same' } }, // 支援牌
+    { id: 'event_strategy', name: "运筹帷幄", type: 'Event', cost: { count: 1, type: 'Common' } },
+    { id: 'event_lisu', name: "刘苏", type: 'Support', cost: { count: 1, type: 'Matching' } },
+    { id: 'food_lotus', name: "莲花酥", type: 'Event', cost: { count: 1, type: 'Common' } }, // 减伤食物
+    { id: 'event_bestest', name: "最好的伙伴!", type: 'Event', cost: { count: 2, type: 'Omni' } },
+    // ... 填充更多卡牌
+];
+
+// 创建角色工厂函数
+const createCharacter = (id, name, element, maxHp = 10, maxEnergy = 3) => ({
+    id,
+    name,
+    hp: maxHp,
+    maxHp,
+    element, // 'Pyro', 'Hydro', 'Anemo', 'Electro', 'Dendro', 'Cryo', 'Geo'
+    energy: 0,
+    maxEnergy,
+    isAlive: true,
+    statuses: [], // 角色状态 (e.g., 护心铠, 冻结)
+    equipment: [], // 装备 (武器, 圣遗物)
+    elementAttachment: null // 附着的元素
+});
+
 const initialState = {
     phase: 'PHASE_ROLL',
+    roundNumber: 1,
+    activePlayerId: 'p1', // 当前行动的玩家
+
     players: {
-        // 玩家 1 (你)
         p1: {
+            id: 'p1',
+            isFirst: true, // 先手权
+            hasEndedRound: false, // 是否已宣布结束回合
             activeCharId: 'char_diluc',
             dice: [],
-            hand: [
-                // 注意：这里将卡牌名字改为了中文
-                { id: 'wp_wolf', name: "狼的末路", type: 'Weapon', cost: { count: 3, type: 'Matching' } },
-                { id: 'event_paimon', name: "汇流", type: 'Event', cost: { count: 2, type: 'Omni' } }
-            ],
+            hand: [], // 手牌
+            deck: [...STARTING_DECK, ...STARTING_DECK, ...STARTING_DECK].slice(0, 30), // 30张牌堆
+
+            // 区域
+            combatStatuses: [], // 出战状态 (e.g., 结晶盾, 激化领域)
+            summons: [], // 召唤物区 (max 4)
+            supports: [], // 支援区 (max 4)
+
             characters: {
-                'char_diluc': { 
-                    id: 'char_diluc', 
-                    name: "迪卢克",
-                    hp: 10, maxHp: 10, element: 'Pyro', energy: 0 
-                }
+                'char_diluc': createCharacter('char_diluc', '迪卢克', 'Pyro', 10, 3),
+                'char_kaeya': createCharacter('char_kaeya', '凯亚', 'Cryo', 10, 2),
+                'char_sucrose': createCharacter('char_sucrose', '砂糖', 'Anemo', 10, 2)
             }
         },
-        // 玩家 2 (对手)
         p2: {
-            activeCharId: 'char_hilichurl',
+            id: 'p2',
+            isFirst: false,
+            hasEndedRound: false,
+            activeCharId: 'char_fischl',
+            dice: [],
+            hand: [],
+            deck: [...STARTING_DECK], // 简化AI卡组
+
+            combatStatuses: [],
+            summons: [],
+            supports: [],
+
             characters: {
-                'char_hilichurl': {
-                    id: 'char_hilichurl',
-                    name: "汇流",
-                    hp: 8,
-                    maxHp: 8,
-                    element: 'Cryo', 
-                    elementAttachment: 'Cryo' // 自带冰附着
-                }
+                'char_fischl': createCharacter('char_fischl', '菲谢尔', 'Electro', 10, 3),
+                'char_collei': createCharacter('char_collei', '柯莱', 'Dendro', 10, 2),
+                'char_oceanid': createCharacter('char_oceanid', '纯水精灵', 'Hydro', 10, 3) // 模拟Boss/角色
             }
         }
     }
 };
 
-// 创建响应式状态：当数据改变时自动触发事件
+// 创建响应式状态
 export function createReactiveState(state) {
     return new Proxy(state, {
         get(target, prop) {
@@ -50,7 +87,6 @@ export function createReactiveState(state) {
         },
         set(target, prop, value) {
             target[prop] = value;
-            // 通知 View 层更新
             globalBus.emit('STATE_CHANGED', { prop, value, target }); 
             return true;
         }
