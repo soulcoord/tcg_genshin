@@ -44,8 +44,14 @@
 
             <!-- 结束回合按钮 (保留在左侧) -->
             <div class="action-buttons">
+                <button id="btn-reroll" class="btn-genshin btn-small">
+                    <span class="btn-text">&#37325;&#25237;</span>
+                </button>
+                <button id="btn-tune" class="btn-genshin btn-small">
+                    <span class="btn-text">&#35843;&#21644;</span>
+                </button>
                 <button id="btn-end-turn" class="btn-genshin">
-                    <span class="btn-text">结束</span>
+                    <span class="btn-text">&#32467;&#26463;</span>
                 </button>
             </div>
         </div>
@@ -124,10 +130,22 @@
 
     <div class="deck-select" id="deck-select">
         <div class="deck-select__panel">
-            <div class="deck-select__title">??????(3/3)</div>
+            <div class="deck-select__title">&#36873;&#25321;&#20320;&#30340;&#35282;&#33394;(3/3)</div>
             <div class="deck-select__list" id="deck-select-list"></div>
             <div class="deck-select__actions">
-                <button class="btn-genshin" id="btn-deck-start">????</button>
+                <button class="btn-genshin" id="btn-deck-start">&#24320;&#22987;&#23545;&#23616;</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="mulligan hidden" id="mulligan">
+        <div class="mulligan__panel">
+            <div class="mulligan__title">&#36873;&#25321;&#35201;&#26367;&#25442;&#30340;&#25163;&#29260;</div>
+            <div class="mulligan__list" id="mulligan-list"></div>
+            <div class="mulligan__actions">
+                <button class="btn-genshin" id="btn-mulligan-confirm">&#30830;&#35748;&#26367;&#25442;</button>
             </div>
         </div>
     </div>
