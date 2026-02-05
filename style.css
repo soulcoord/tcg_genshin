@@ -1,4 +1,4 @@
-/* style.css */
+﻿/* style.css */
 
 :root {
     --c-bg-void: #121218;
@@ -103,7 +103,10 @@ body {
     border: 1px solid rgba(255,255,255,0.1);
 }
 .card-back::after {
-    content: '✧'; color: #a1887f; font-size: 22px;
+    /* 原乱码 '鉁?' 修复为 ❖ (万能骰符号) */
+    content: '❖'; 
+    color: #a1887f; 
+    font-size: 22px;
     text-shadow: 0 0 5px rgba(255,255,255,0.2);
 }
 
@@ -541,7 +544,7 @@ body {
 }
 
 
-/* --- ???? --- */
+/* --- 牌组选择 --- */
 .deck-select {
     position: absolute;
     inset: 0;
@@ -669,4 +672,77 @@ body {
 .active-card__name, .mulligan-card__name {
     font-size: 12px;
     text-align: center;
+}
+
+/* --- Added: Selection + Zones --- */
+.dice-wrapper.selected {
+    outline: 2px solid #ffd666;
+    box-shadow: 0 0 12px rgba(255, 214, 102, 0.7);
+    transform: scale(1.1);
+}
+
+.energy-badge {
+    color: #ffd666;
+}
+
+.summon-zone {
+    position: absolute;
+    left: 200px;
+    top: 20%;
+    bottom: 20%;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: none;
+}
+
+.summon-slot {
+    width: 80px;
+    height: 110px;
+    border: 2px dashed rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.support-slot.filled,
+.summon-slot.filled {
+    border-color: rgba(212, 175, 55, 0.6);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.slot-count {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.support-slot,
+.summon-slot {
+    position: relative;
+}
+
+.mulligan__panel {
+    width: min(900px, 92vw);
+    max-height: 80vh;
+    background: rgba(18, 18, 24, 0.95);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+.mulligan__title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }

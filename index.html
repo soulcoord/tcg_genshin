@@ -1,48 +1,48 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>七圣召唤 - 实战对局</title>
+    <title>涓冨湥鍙敜 - 瀹炴垬瀵瑰眬</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <div id="game-board" class="genshin-board">
         
-        <!-- 1. 左侧边栏：牌库与回合指示 -->
+        <!-- 1. 宸︿晶杈规爮锛氱墝搴撲笌鍥炲悎鎸囩ず -->
         <div class="phase-sidebar">
             
-            <!-- 对手信息区 -->
+            <!-- 瀵规墜淇℃伅鍖?-->
             <div class="sidebar-section opponent-section">
-                <!-- 对手牌库 -->
+                <!-- 瀵规墜鐗屽簱 -->
                 <div class="deck-stack opponent-deck">
                     <div class="card-back"></div>
                 </div>
-                <!-- 对手骰子计数 -->
+                <!-- 瀵规墜楠板瓙璁℃暟 -->
                 <div class="dice-counter" id="opp-dice-count">8</div>
             </div>
 
-            <!-- 回合指针 (中间) -->
+            <!-- 鍥炲悎鎸囬拡 (涓棿) -->
             <div class="turn-indicator-container">
-                <!-- 指针：通过 CSS 类 .turn-p1 (指向我方) 或 .turn-p2 (指向敌方) 控制旋转 -->
+                <!-- 鎸囬拡锛氶€氳繃 CSS 绫?.turn-p1 (鎸囧悜鎴戞柟) 鎴?.turn-p2 (鎸囧悜鏁屾柟) 鎺у埗鏃嬭浆 -->
                 <div class="turn-pointer turn-p1" id="turn-pointer">
-                    <!-- 指针图标 -->
+                    <!-- 鎸囬拡鍥炬爣 -->
                 </div>
-                <div class="phase-text" id="phase-text">我的回合</div>
+                <div class="phase-text" id="phase-text">鎴戠殑鍥炲悎</div>
             </div>
 
-            <!-- 玩家信息区 -->
+            <!-- 鐜╁淇℃伅鍖?-->
             <div class="sidebar-section player-section">
-                <!-- 玩家骰子计数 -->
+                <!-- 鐜╁楠板瓙璁℃暟 -->
                 <div class="dice-counter" id="player-dice-count">8</div>
-                <!-- 玩家牌库 -->
+                <!-- 鐜╁鐗屽簱 -->
                 <div class="deck-stack player-deck">
                     <div class="card-back"></div>
                 </div>
             </div>
 
-            <!-- 结束回合按钮 (保留在左侧) -->
+            <!-- 缁撴潫鍥炲悎鎸夐挳 (淇濈暀鍦ㄥ乏渚? -->
             <div class="action-buttons">
                 <button id="btn-reroll" class="btn-genshin btn-small">
                     <span class="btn-text">&#37325;&#25237;</span>
@@ -56,36 +56,43 @@
             </div>
         </div>
 
-        <!-- 支援区：已移除派蒙卡片，保留空槽位 -->
+        <!-- 鏀彺鍖猴細宸茬Щ闄ゆ淳钂欏崱鐗囷紝淇濈暀绌烘Ы浣?-->
         <div class="support-zone left-side-layer" id="support-zone">
             <div class="support-slot"></div>
             <div class="support-slot"></div>
             <div class="support-slot"></div>
             <div class="support-slot"></div>
         </div>
+        <div class="summon-zone left-side-layer" id="summon-zone">
+            <div class="summon-slot"></div>
+            <div class="summon-slot"></div>
+            <div class="summon-slot"></div>
+            <div class="summon-slot"></div>
+        </div>
 
-        <!-- 2. 中央战场区域 -->
+
+        <!-- 2. 涓ぎ鎴樺満鍖哄煙 -->
         <div class="battle-field">
-            <!-- 上方：对手区域 -->
+            <!-- 涓婃柟锛氬鎵嬪尯鍩?-->
             <div class="char-zone opponent-zone" id="opponent-zone">
-                <!-- JS 动态插入对手卡牌 -->
+                <!-- JS 鍔ㄦ€佹彃鍏ュ鎵嬪崱鐗?-->
             </div>
 
-            <!-- 下方：我方区域 -->
+            <!-- 涓嬫柟锛氭垜鏂瑰尯鍩?-->
             <div class="char-zone player-zone">
-                <!-- 后台角色左 -->
+                <!-- 鍚庡彴瑙掕壊宸?-->
                 <div class="card character-card standby" data-empty="true"></div>
                 
-                <!-- 出战角色 -->
+                <!-- 鍑烘垬瑙掕壊 -->
                 <div class="card character-card active" id="active-char">
                     <div class="card__visual">
                         <div class="char-img"></div> 
                     </div>
                     <div class="card__info">
-                        <div class="card__name">载入中...</div>
+                        <div class="card__name">杞藉叆涓?..</div>
                         <div class="status-badges">
                             <div class="badge hp-badge">10</div>
-                            <div class="badge energy-badge">⚡ 0/3</div>
+                            <div class="badge energy-badge">鈿?0/3</div>
                         </div>
                     </div>
                     <div class="card__hp-bar-container">
@@ -93,27 +100,27 @@
                     </div>
                 </div>
 
-                <!-- 后台角色右 -->
+                <!-- 鍚庡彴瑙掕壊鍙?-->
                 <div class="card character-card standby" data-empty="true"></div>
             </div>
         </div>
 
-        <!-- 3. 右侧区域：骰子与技能 -->
+        <!-- 3. 鍙充晶鍖哄煙锛氶瀛愪笌鎶€鑳?-->
         <div class="right-hud-layer">
-            <!-- 右上角：元素骰子池 -->
+            <!-- 鍙充笂瑙掞細鍏冪礌楠板瓙姹?-->
             <div class="dice-zone" id="dice-container"></div>
 
-            <!-- 右下角：技能面板 -->
+            <!-- 鍙充笅瑙掞細鎶€鑳介潰鏉?-->
             <div class="skill-zone">
-                <div class="skill-btn normal-atk" title="普通攻击">
+                <div class="skill-btn normal-atk" title="鏅€氭敾鍑?>
                     <div class="skill-icon">A</div> 
                     <div class="skill-cost-badge">1</div>
                 </div>
-                <div class="skill-btn elem-skill" title="元素战技">
+                <div class="skill-btn elem-skill" title="鍏冪礌鎴樻妧">
                     <div class="skill-icon">E</div>
                     <div class="skill-cost-badge">3</div>
                 </div>
-                <div class="skill-btn elem-burst" title="元素爆发">
+                <div class="skill-btn elem-burst" title="鍏冪礌鐖嗗彂">
                     <div class="skill-icon">Q</div>
                     <div class="skill-cost-badge">3</div>
                 </div>
@@ -121,7 +128,7 @@
             <div class="skill-list" id="skill-list"></div>
         </div>
 
-        <!-- 4. 底部 HUD：手牌 -->
+        <!-- 4. 搴曢儴 HUD锛氭墜鐗?-->
         <div class="bottom-hud">
             <div class="hand-cards-container" id="hand-area"></div>
         </div>
@@ -140,6 +147,16 @@
 
     
 
+    <div class="active-select hidden" id="active-select">
+        <div class="deck-select__panel">
+            <div class="deck-select__title" id="active-select-title">Select Starting Active</div>
+            <div class="active-select__list" id="active-select-list"></div>
+            <div class="deck-select__actions">
+                <button class="btn-genshin" id="btn-active-confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
     <div class="mulligan hidden" id="mulligan">
         <div class="mulligan__panel">
             <div class="mulligan__title">&#36873;&#25321;&#35201;&#26367;&#25442;&#30340;&#25163;&#29260;</div>
@@ -155,3 +172,4 @@
     <script type="module" src="main.js"></script>
 </body>
 </html>
+

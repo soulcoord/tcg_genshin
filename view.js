@@ -1,21 +1,21 @@
-// view.js
+﻿// view.js
 import { gameState } from './model.js';
 import { globalBus } from './eventBus.js';
 
 // --- 核心配置 ---
 const ELEMENT_CONFIG = {
-    'Cryo':   { color: '#99FFFF', icon: 'https://placehold.co/100/99FFFF/000?text=❄️' }, // 冰
-    'Hydro':  { color: '#69C0FF', icon: 'https://placehold.co/100/69C0FF/000?text=💧' }, // 水
-    'Pyro':   { color: '#FF7875', icon: 'https://placehold.co/100/FF7875/000?text=🔥' }, // 火
-    'Electro':{ color: '#B37FEB', icon: 'https://placehold.co/100/B37FEB/000?text=⚡' }, // 雷
-    'Anemo':  { color: '#95DE64', icon: 'https://placehold.co/100/95DE64/000?text=🍃' }, // 风
-    'Geo':    { color: '#FFE58F', icon: 'https://placehold.co/100/FFE58F/000?text=🗿' }, // 岩
-    'Dendro': { color: '#B7EB8F', icon: 'https://placehold.co/100/B7EB8F/000?text=🌿' }, // 草
-    'Omni':   { color: '#FFFFFF', icon: 'https://placehold.co/100/FFFFFF/000?text=⚪' }  // 万能
+    'Cryo':    { color: '#99FFFF', icon: 'https://placehold.co/100/99FFFF/000?text=❄️' }, // 冰
+    'Hydro':   { color: '#69C0FF', icon: 'https://placehold.co/100/69C0FF/000?text=💧' }, // 水
+    'Pyro':    { color: '#FF7875', icon: 'https://placehold.co/100/FF7875/000?text=🔥' }, // 火
+    'Electro': { color: '#B37FEB', icon: 'https://placehold.co/100/B37FEB/000?text=⚡' }, // 雷
+    'Anemo':   { color: '#95DE64', icon: 'https://placehold.co/100/95DE64/000?text=🌪️' }, // 风
+    'Geo':     { color: '#FFE58F', icon: 'https://placehold.co/100/FFE58F/000?text=🪨' }, // 岩
+    'Dendro':  { color: '#B7EB8F', icon: 'https://placehold.co/100/B7EB8F/000?text=🌿' }, // 草
+    'Omni':    { color: '#FFFFFF', icon: 'https://placehold.co/100/FFFFFF/000?text=💎' }  // 万能
 };
 
-// 修正文件名乱码
-const CARD_DATA_FILES = ['總覽 (1).csv', '總覽 (2).csv', '總覽 (3).csv'];
+// 修正文件名乱码 (原乱码 '绺借' 推测为 '总览')
+const CARD_DATA_FILES = ['总览 (1).csv', '总览 (2).csv', '总览 (3).csv'];
 const cardImageMap = new Map();
 const cardPageMap = new Map();
 let cardDataLoaded = false;
@@ -25,8 +25,6 @@ const characterDataMap = new Map();
 let characterDataLoaded = false;
 const actionCardPool = [];
 const actionImageMap = new Map();
-
-
 
 // 【新增】：行动牌数据源
 const ACTION_DATA_FILES = ['equipment.json', 'support.json'];
@@ -40,6 +38,8 @@ export function initView() {
     renderHand();
     renderPlayerZone();
     renderOpponent();
+    renderSupportZone();
+    renderSummonZone();
     updateDiceCounters();
 
     // 加载所有数据
@@ -50,7 +50,8 @@ export function initView() {
     ]).then(() => {
         renderSkillPanel();
         initDeckSelection();
-                        initActiveSelect(); // 数据都齐了，启动选人流程
+        initActiveSelect();
+        initMulligan(); // 数据都齐了，启动选人流程
     }).catch(err => {
         console.error("Data load failed:", err);
     });
@@ -58,7 +59,7 @@ export function initView() {
     const btnReroll = document.getElementById('btn-reroll');
     if (btnReroll) {
         btnReroll.addEventListener('click', () => {
-            globalBus.emit('ACTION_REROLL_DICE');
+            globalBus.emit('ACTION_REROLL_DICE', { indices: Array.from(selectedDice) });
         });
     }
 
@@ -80,19 +81,19 @@ export function initView() {
     const btnNormal = document.querySelector('.skill-btn.normal-atk');
     if (btnNormal) {
         btnNormal.addEventListener('click', () => {
-            globalBus.emit('ACTION_USE_SKILL', { skillId: btnNormal.dataset.skillId || 'normal', skillData: btnNormal._skillData || null });
+            globalBus.emit('ACTION_USE_SKILL', { skillId: btnNormal.dataset.skillId || 'normal', skillData: btnNormal._skillData || null, slot: 'normal' });
         });
     }
     const btnSkill = document.querySelector('.skill-btn.elem-skill');
     if (btnSkill) {
         btnSkill.addEventListener('click', () => {
-            globalBus.emit('ACTION_USE_SKILL', { skillId: btnSkill.dataset.skillId || 'skill', skillData: btnSkill._skillData || null });
+            globalBus.emit('ACTION_USE_SKILL', { skillId: btnSkill.dataset.skillId || 'skill', skillData: btnSkill._skillData || null, slot: 'skill' });
         });
     }
     const btnBurst = document.querySelector('.skill-btn.elem-burst');
     if (btnBurst) {
         btnBurst.addEventListener('click', () => {
-            globalBus.emit('ACTION_USE_SKILL', { skillId: btnBurst.dataset.skillId || 'burst', skillData: btnBurst._skillData || null });
+            globalBus.emit('ACTION_USE_SKILL', { skillId: btnBurst.dataset.skillId || 'burst', skillData: btnBurst._skillData || null, slot: 'burst' });
         });
     }
 
@@ -100,7 +101,7 @@ export function initView() {
     globalBus.on('STATE_CHANGED', (payload) => {
         if (payload.prop === 'hp') {
             updateHpBar(payload.target, payload.value);
-            checkGameOver(payload.target);
+            checkGameOver();
         }
         if (payload.prop === 'dice') {
             renderDice(gameState.players.p1.dice); 
@@ -111,9 +112,21 @@ export function initView() {
         }
         if (payload.prop === 'phase') {
             updateTurnPointer(payload.value);
+            if (payload.value !== 'PHASE_ROLL' && !tuneMode) {
+                clearDiceSelection();
+            }
         }
         if (payload.prop === 'activePlayerId') {
             updateTurnPointer(gameState.phase);
+        }
+        if (payload.prop === 'energy' || payload.prop === 'maxEnergy') {
+            updateEnergyBadge(payload.target);
+        }
+        if (payload.prop === 'supports') {
+            renderSupportZone();
+        }
+        if (payload.prop === 'summons') {
+            renderSummonZone();
         }
         if (payload.prop === 'elementAttachment') {
             updateElementAttachment(payload.target, payload.value);
@@ -123,6 +136,13 @@ export function initView() {
             renderOpponent();
             renderSkillPanel();
         }
+    });
+    globalBus.on('CLEAR_DICE_SELECTION', () => {
+        clearDiceSelection();
+    });
+    globalBus.on('TUNE_COMPLETE', () => {
+        setTuneMode(false);
+        clearDiceSelection();
     });
 }
 
@@ -186,11 +206,13 @@ async function loadActionData() {
             ACTION_DATA_FILES.map(file => fetch(encodeURI(file)).then(res => res.json()))
         );
         
-        jsons.forEach(dataList => {
+        ACTION_DATA_FILES.forEach((file, idx) => {
+            const dataList = jsons[idx];
+            const category = file.toLowerCase().includes('equipment') ? 'equipment' : 'support';
             if (Array.isArray(dataList)) {
                 dataList.forEach(item => {
-                    // 确保是行动牌
                     if (item && item.name) {
+                        item.category = category;
                         actionCardMap.set(item.name, item);
                     }
                 });
@@ -216,7 +238,7 @@ function initDeckSelection() {
     const characters = getCharacterList();
 
     if (!characters.length) {
-        if (titleEl) titleEl.textContent = '???????????????????';
+        if (titleEl) titleEl.textContent = '正在加载角色数据...';
         startBtn.disabled = true;
         return;
     }
@@ -462,7 +484,7 @@ function initActionCardSelection(chosenCharacters) {
         startBtn.textContent = `开始游戏 (${totalCards}/30)`;
         startBtn.onclick = () => {
             if (totalCards !== MAX_CARDS) {
-                if (!confirm(`牌组未满 30 张（当前 ${totalCards}），确定要开始吗？(不足部分将随机填充)`)) {
+                if (!confirm(`牌组未满 30 张（当前 ${totalCards}），确定要开始吗？ 不足部分将随机填充`)) {
                     return;
                 }
                 // 自动填充逻辑 (可选)
@@ -541,10 +563,14 @@ function setupPlayersFromSelection(chosenChars, playerDeck) {
     p2.isFirst = false;
 
     p1.dice = [];
+    p1.supports = [];
+    p1.summons = [];
+    p1.combatStatuses = [];
+    p2.supports = [];
+    p2.summons = [];
+    p2.combatStatuses = [];
     p2.dice = [];
 
-    p1.deck = buildActionDeck();
-    p2.deck = buildActionDeck();
     p1.hand = [];
     p2.hand = [];
 
@@ -619,7 +645,8 @@ function slugify(name) {
     return name
         .toLowerCase()
         .replace(/\s+/g, '_')
-        .replace(/[^a-z0-9_一-龥]/g, '');
+        // 修复：匹配中文字符范围 \u4e00-\u9fa5
+        .replace(/[^a-z0-9_\u4e00-\u9fa5]/g, '');
 }
 
 
@@ -627,13 +654,19 @@ function initActiveSelect() {
     const panel = document.getElementById('active-select');
     const listEl = document.getElementById('active-select-list');
     const btn = document.getElementById('btn-active-confirm');
+    const titleEl = document.getElementById('active-select-title');
     if (!panel || !listEl || !btn) return;
 
-    globalBus.on('SHOW_ACTIVE_SELECT', () => {
+    globalBus.on('SHOW_ACTIVE_SELECT', (payload = {}) => {
+        const reason = payload.reason || 'initial';
+        if (titleEl) {
+            titleEl.textContent = reason === 'forced' ? 'Select New Active' : 'Select Starting Active';
+        }
         listEl.innerHTML = '';
         panel.classList.remove('hidden');
         let selectedId = null;
-        const chars = Object.values(gameState.players.p1.characters);
+        const chars = Object.values(gameState.players.p1.characters)
+            .filter(c => c.isAlive && c.hp > 0);
 
         chars.forEach(char => {
             const el = document.createElement('div');
@@ -658,7 +691,50 @@ function initActiveSelect() {
         btn.onclick = () => {
             if (!selectedId) return;
             panel.classList.add('hidden');
-            globalBus.emit('CONFIRM_ACTIVE_SELECT', { targetId: selectedId });
+            globalBus.emit('CONFIRM_ACTIVE_SELECT', { targetId: selectedId, reason });
+        };
+    });
+}
+
+function initMulligan() {
+    const panel = document.getElementById('mulligan');
+    const listEl = document.getElementById('mulligan-list');
+    const btn = document.getElementById('btn-mulligan-confirm');
+    if (!panel || !listEl || !btn) return;
+
+    globalBus.on('SHOW_MULLIGAN', () => {
+        listEl.innerHTML = '';
+        panel.classList.remove('hidden');
+        const selected = new Set();
+        const hand = gameState.players.p1.hand || [];
+
+        hand.forEach(card => {
+            const el = document.createElement('div');
+            el.className = 'mulligan-card';
+            const img = document.createElement('div');
+            img.className = 'mulligan-card__img';
+            const imgUrl = resolveCardImageUrl(card.name) || '';
+            if (imgUrl) img.style.backgroundImage = `url("${imgUrl}")`;
+            const name = document.createElement('div');
+            name.className = 'mulligan-card__name';
+            name.textContent = card.name;
+            el.appendChild(img);
+            el.appendChild(name);
+            el.addEventListener('click', () => {
+                if (selected.has(card.id)) {
+                    selected.delete(card.id);
+                    el.classList.remove('selected');
+                } else {
+                    selected.add(card.id);
+                    el.classList.add('selected');
+                }
+            });
+            listEl.appendChild(el);
+        });
+
+        btn.onclick = () => {
+            panel.classList.add('hidden');
+            globalBus.emit('CONFIRM_MULLIGAN', { cardIds: Array.from(selected) });
         };
     });
 }
@@ -902,14 +978,22 @@ function updateTurnPointer(phase) {
     }
 }
 
-function checkGameOver(targetChar) {
-    if (targetChar.hp <= 0) {
-        setTimeout(() => {
-            const isOpponent = Boolean(gameState.players.p2.characters[targetChar.id]);
-            alert(isOpponent ? "胜利！" : "失败！");
-            globalBus.emit('GAME_OVER');
-        }, 300);
-    }
+function checkGameOver() {
+    const p1Alive = Object.values(gameState.players.p1.characters || {}).some(c => c.isAlive && c.hp > 0);
+    const p2Alive = Object.values(gameState.players.p2.characters || {}).some(c => c.isAlive && c.hp > 0);
+    if (p1Alive && p2Alive) return;
+    setTimeout(() => {
+        if (!p1Alive && !p2Alive) {
+            alert('Draw');
+            globalBus.emit('GAME_OVER', { winner: 'draw' });
+        } else if (!p2Alive) {
+            alert('Victory');
+            globalBus.emit('GAME_OVER', { winner: 'p1' });
+        } else {
+            alert('Defeat');
+            globalBus.emit('GAME_OVER', { winner: 'p2' });
+        }
+    }, 300);
 }
 
 // 【修复】：渲染对手区域（包含后台角色）
@@ -941,12 +1025,64 @@ function renderOpponent() {
         `;
         zone.appendChild(card);
 
+        if (charData.elementAttachment) {
+            updateElementAttachment(charData, charData.elementAttachment);
+        }
+
         const imageUrl = resolveCardImageUrl(charData.name);
         const visual = card.querySelector('.card__visual');
         if (visual && imageUrl) {
             visual.style.backgroundImage = `url("${imageUrl}")`;
             visual.style.backgroundSize = 'cover';
             visual.style.backgroundPosition = 'center';
+        }
+    });
+}
+
+function renderSupportZone() {
+    const zone = document.getElementById('support-zone');
+    if (!zone) return;
+    const slots = zone.querySelectorAll('.support-slot');
+    const supports = gameState.players.p1.supports || [];
+
+    slots.forEach((slot, idx) => {
+        const card = supports[idx];
+        if (card) {
+            const imgUrl = resolveCardImageUrl(card.name) || card.image || '';
+            slot.classList.add('filled');
+            slot.style.backgroundImage = imgUrl ? `url("${imgUrl}")` : '';
+            slot.title = card.name || '';
+            const count = card.uses || card.duration || '';
+            slot.innerHTML = count ? `<div class="slot-count">${count}</div>` : '';
+        } else {
+            slot.classList.remove('filled');
+            slot.style.backgroundImage = '';
+            slot.title = '';
+            slot.innerHTML = '';
+        }
+    });
+}
+
+function renderSummonZone() {
+    const zone = document.getElementById('summon-zone');
+    if (!zone) return;
+    const slots = zone.querySelectorAll('.summon-slot');
+    const summons = gameState.players.p1.summons || [];
+
+    slots.forEach((slot, idx) => {
+        const summon = summons[idx];
+        if (summon) {
+            const imgUrl = resolveCardImageUrl(summon.name) || summon.image || '';
+            slot.classList.add('filled');
+            slot.style.backgroundImage = imgUrl ? `url("${imgUrl}")` : '';
+            slot.title = summon.name || '';
+            const count = summon.uses || summon.duration || '';
+            slot.innerHTML = count ? `<div class="slot-count">${count}</div>` : '';
+        } else {
+            slot.classList.remove('filled');
+            slot.style.backgroundImage = '';
+            slot.title = '';
+            slot.innerHTML = '';
         }
     });
 }
@@ -968,6 +1104,16 @@ function updateHpBar(charState, newHp) {
         setTimeout(() => {
             cardEl.style.transform = '';
         }, 100);
+    }
+}
+
+function updateEnergyBadge(charState) {
+    if (!charState) return;
+    const cardEl = document.querySelector(`.card[data-id="${charState.id}"]`);
+    if (!cardEl) return;
+    const badge = cardEl.querySelector('.energy-badge');
+    if (badge) {
+        badge.textContent = `${charState.energy}/${charState.maxEnergy}`;
     }
 }
 
@@ -1032,7 +1178,7 @@ function renderPlayerZone() {
             // 【新增】：点击后台角色时，触发切换事件
             slot.style.cursor = 'pointer';
             slot.onclick = () => {
-               console.log("尝试切换到:", char.name);
+               console.log("尝试切换到", char.name);
                globalBus.emit('ACTION_SWITCH_CHAR', { targetId: char.id });
             };
         } else {
@@ -1055,6 +1201,7 @@ function updateCardVisual(cardEl, charData) {
             <div class="card__name">${charData.name}</div>
             <div class="status-badges">
                 <div class="badge hp-badge">${charData.hp}</div>
+                <div class="badge energy-badge">${charData.energy}/${charData.maxEnergy}</div>
                 <div class="badge element-attachment" style="display:none"></div>
             </div>
         </div>
@@ -1075,26 +1222,31 @@ function renderDice(diceList) {
     
     const list = diceList || [];
 
-    list.forEach(type => {
-        const config = ELEMENT_CONFIG[type] || { color: '#cccccc', icon: '' };
+    selectedDice = new Set([...selectedDice].filter(i => i >= 0 && i < list.length));
 
+    list.forEach((type, idx) => {
+        const config = ELEMENT_CONFIG[type] || { color: '#cccccc', icon: '' };
+    
         const wrapper = document.createElement('div');
         wrapper.className = 'dice-wrapper';
         wrapper.dataset.type = type;
-        
+        wrapper.dataset.index = String(idx);
+        if (selectedDice.has(idx)) wrapper.classList.add('selected');
+    
         const textLayer = document.createElement('div');
         textLayer.className = 'dice-text-layer';
-        textLayer.textContent = type.substring(0, 2).toUpperCase(); 
+        textLayer.textContent = type.substring(0, 2).toUpperCase();
         textLayer.style.color = config.color;
-
+    
         const img = document.createElement('img');
         img.className = 'dice-bg-layer';
-        img.src = config.icon; 
+        img.src = config.icon;
         img.alt = type;
-        
+    
         wrapper.appendChild(textLayer);
         wrapper.appendChild(img);
-        
+        wrapper.addEventListener('click', () => toggleDiceSelection(idx));
+    
         container.appendChild(wrapper);
     });
 }
@@ -1117,7 +1269,8 @@ function renderHand() {
         card.addEventListener('mousedown', handleDragStart);
         card.addEventListener('click', () => {
             if (tuneMode) {
-                globalBus.emit('ACTION_TUNE_CARD', { cardId: cardData.id });
+                const dieIndex = selectedDice.size ? Array.from(selectedDice)[0] : null;
+                globalBus.emit('ACTION_TUNE_CARD', { cardId: cardData.id, dieIndex });
             }
         });
         handContainer.appendChild(card);
@@ -1125,13 +1278,41 @@ function renderHand() {
 }
 
 let tuneMode = false;
+let selectedDice = new Set();
+
+function setTuneMode(value) {
+    tuneMode = Boolean(value);
+    document.body.classList.toggle('tune-mode', tuneMode);
+    if (!tuneMode) {
+        clearDiceSelection();
+    }
+}
+
+function isDiceSelectable() {
+    return gameState.phase === 'PHASE_ROLL' || tuneMode;
+}
+
+function toggleDiceSelection(index) {
+    if (!isDiceSelectable()) return;
+    if (selectedDice.has(index)) {
+        selectedDice.delete(index);
+    } else {
+        selectedDice.add(index);
+    }
+    renderDice(gameState.players.p1.dice);
+}
+
+function clearDiceSelection() {
+    if (selectedDice.size === 0) return;
+    selectedDice.clear();
+    renderDice(gameState.players.p1.dice);
+}
 let draggedEl = null;
 let ghostEl = null;
 let startX, startY;
 
 function toggleTuneMode() {
-    tuneMode = !tuneMode;
-    document.body.classList.toggle('tune-mode', tuneMode);
+    setTuneMode(!tuneMode);
 }
 
 function handleDragStart(e) {

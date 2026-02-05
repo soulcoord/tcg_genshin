@@ -1,42 +1,94 @@
-export class CostValidator {
+﻿export class CostValidator {
     /**
-     * @param {Array} dicePool 当前拥有的骰子
-     * @param {Object} cost 卡牌费用
-     * @param {String} activeElement 当前角色元素
+     * Validate and choose dice indices for a cost.
+     * @param {Array<string>} dicePool
+     * @param {Object|Array} cost
+     * @param {string} activeElement
+     * @returns {{ success: boolean, paidIndices: number[] }}
      */
     static check(dicePool, cost, activeElement) {
-        if (!cost || cost.count === 0) return { success: true, paidIndices: [] };
+        if (!cost) return { success: true, paidIndices: [] };
+        const costs = Array.isArray(cost) ? cost : [cost];
+        if (!costs.length) return { success: true, paidIndices: [] };
 
-        const paidIndices = [];
-        let required = cost.count;
-        
-        // 目标元素：如果是匹配费用，则必须是当前角色元素；否则为 null
-        const targetElement = cost.type === 'Matching' ? activeElement : null;
+        const pool = Array.isArray(dicePool)
+            ? dicePool.map((t, i) => ({ type: t, index: i, used: false }))
+            : [];
+        const paid = [];
 
-        // 1. 优先扣除匹配的元素骰子
-        if (targetElement) {
-            for (let i = 0; i < dicePool.length; i++) {
-                if (required > 0 && dicePool[i] === targetElement) {
-                    paidIndices.push(i);
-                    required--;
+        const take = (predicate, count) => {
+            let remaining = count;
+            for (const die of pool) {
+                if (remaining <= 0) break;
+                if (!die.used && predicate(die)) {
+                    die.used = true;
+                    paid.push(die.index);
+                    remaining--;
                 }
             }
+            return remaining === 0;
+        };
+
+        const takeElement = (element, count) => {
+            if (!element) return false;
+            const okExact = take(d => d.type === element, count);
+            if (okExact) return true;
+            const usedExact = paid.filter(i => dicePool[i] === element).length;
+            const remaining = Math.max(0, count - usedExact);
+            return take(d => d.type === 'Omni', remaining);
+        };
+
+        const takeAny = (count) => take(d => !d.used, count);
+
+        for (const item of costs) {
+            const type = item?.type;
+            const count = Number(item?.count || 0);
+            if (count <= 0) continue;
+
+            if (type === 'Matching') {
+                if (!takeElement(activeElement, count)) return { success: false, paidIndices: [] };
+                continue;
+            }
+
+            if (type === 'Same') {
+                const elements = ['Cryo', 'Hydro', 'Pyro', 'Electro', 'Anemo', 'Geo', 'Dendro'];
+                let satisfied = false;
+                for (const el of elements) {
+                    const available = pool.filter(d => !d.used && (d.type === el || d.type === 'Omni')).length;
+                    if (available >= count) {
+                        if (!take(d => d.type === el, count)) {
+                            const usedEl = paid.filter(i => dicePool[i] === el).length;
+                            const remaining = Math.max(0, count - usedEl);
+                            take(d => d.type === 'Omni', remaining);
+                        }
+                        satisfied = true;
+                        break;
+                    }
+                }
+                if (!satisfied) return { success: false, paidIndices: [] };
+                continue;
+            }
+
+            if (type === 'Unaligned' || type === 'Common' || type === 'Any') {
+                if (!takeAny(count)) return { success: false, paidIndices: [] };
+                continue;
+            }
+
+            if (type === 'Omni') {
+                if (!take(d => d.type === 'Omni', count)) return { success: false, paidIndices: [] };
+                continue;
+            }
+
+            const elementTypes = ['Cryo', 'Hydro', 'Pyro', 'Electro', 'Anemo', 'Geo', 'Dendro'];
+            if (elementTypes.includes(type)) {
+                if (!takeElement(type, count)) return { success: false, paidIndices: [] };
+                continue;
+            }
+
+            if (!takeAny(count)) return { success: false, paidIndices: [] };
         }
 
-        // 2. 其次扣除万能骰子 (Omni)
-        for (let i = 0; i < dicePool.length; i++) {
-            // 确保不重复使用已被选中的骰子
-            if (required > 0 && dicePool[i] === 'Omni' && !paidIndices.includes(i)) {
-                paidIndices.push(i);
-                required--;
-            }
-        }
-        
-        // 3. 结果判定
-        if (required === 0) {
-            return { success: true, paidIndices };
-        } else {
-            return { success: false, paidIndices: [] };
-        }
+        return { success: true, paidIndices: paid.sort((a, b) => a - b) };
     }
 }
+
