@@ -407,11 +407,6 @@ globalBus.on('ACTION_PLAY_CARD', (data) => {
     if (cardIndex === -1) return;
     const card = player.hand[cardIndex];
 
-    if (card.category === 'event') {
-        alert('Event cards are not implemented yet.');
-        return;
-    }
-
     const activeChar = player.characters[player.activeCharId];
     const result = CostValidator.check(player.dice, card.cost, activeChar.element);
     if (!result.success) {
@@ -422,7 +417,16 @@ globalBus.on('ACTION_PLAY_CARD', (data) => {
     removeDiceByIndices(player, result.paidIndices);
     player.hand = player.hand.filter((_, i) => i !== cardIndex);
 
-    if (card.category === 'support') {
+    if (card.category === 'event' || card.type === 'Event') {
+        if (card.id === 'event_strategy' || card.name === '运筹帷幄') {
+            GameMechanics.drawCards(player, 2);
+        } else if (card.id === 'event_bestest' || card.name === '最好的伙伴!') {
+            player.dice = [...player.dice, 'Omni', 'Omni'];
+            capDice(player);
+        } else if (card.id === 'food_lotus' || card.name === '莲花酥' || card.name === '\u83b2\u82b1\u9165') {
+            activeChar.statuses = [...(activeChar.statuses || []), { name: 'Lotus Crisps', type: 'Shield', value: 3 }];
+        }
+    } else if (card.category === 'support' || card.type === 'Support') {
         GameMechanics.addSupport(player, card);
     } else {
         activeChar.equipment = [...(activeChar.equipment || []), card];
