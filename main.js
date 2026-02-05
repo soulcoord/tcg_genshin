@@ -7,6 +7,8 @@ import { DamagePipeline } from './damagePipeline.js';
 import { rollDice } from './dice.js';
 import { gameState } from './model.js';
 import { CostValidator } from './costValidator.js';
+import { GameMechanics } from './gameMechanics.js';
+import { CONSTANTS } from './constants.js';
 
 console.log(">>> 游戏引擎启动中...");
 initView();
@@ -41,6 +43,11 @@ globalBus.on('DECK_READY', () => {
 
 // 延迟启动
 setTimeout(() => {
+    console.log(">>> 游戏开始，抽取初始手牌 (5张)");
+    GameMechanics.drawCards(gameState.players.p1, 5);
+    GameMechanics.drawCards(gameState.players.p2, 5);
+
+    // 进入第一回合投掷阶段
     gameFSM.transitionTo(PHASES.ROLL);
 }, 1000);
 
@@ -86,8 +93,8 @@ function handleTurnSwitch(isCombatAction) {
 // 1. 投骰子阶段
 globalBus.on('CMD_ROLL_DICE_PHASE', () => {
     // 双方投骰子
-    gameState.players.p1.dice = rollDice(8);
-    gameState.players.p2.dice = rollDice(8);
+    gameState.players.p1.dice = rollDice(CONSTANTS.INITIAL_DICE_COUNT);
+    gameState.players.p2.dice = rollDice(CONSTANTS.INITIAL_DICE_COUNT);
     console.log(">>> 双方骰子已投掷");
     
     setTimeout(() => {
@@ -117,21 +124,28 @@ globalBus.on('ACTION_PLAY_CARD', (data) => {
         result.paidIndices.sort((a,b) => b-a).forEach(i => newDice.splice(i,1));
         player.dice = newDice;
         
-        // 弃牌
-        player.hand = player.hand.filter((_, i) => i !== cardIndex); // 简单处理
+        // 从手牌移除
+        const newHand = [...player.hand];
+        newHand.splice(cardIndex, 1);
+        player.hand = newHand; // 触发UI更新
 
-        // 执行卡牌效果
-        if (card.id === 'food_lotus') {
-            // 莲花酥：给当前出战角色添加状态
-            activeChar.statuses.push({ name: '莲花酥', type: 'Buff', value: 1 }); // value 用作计数或ID
-            console.log(">>> 使用莲花酥：本回合减伤3点");
-        } else if (card.id === 'wp_wolf') {
-            // 装备：简单的逻辑，加到 equipment 数组
+        console.log(`>>> 打出卡牌: ${card.name} (${card.type})`);
+
+        // 根据卡牌类型执行逻辑
+        if (card.type === 'Support') {
+            GameMechanics.addSupport(player, card);
+        } else if (card.type === 'Weapon' || card.type === 'Artifact') {
             activeChar.equipment.push(card);
-            console.log(">>> 装备狼的末路");
+            console.log(`>>> 角色装备: ${card.name}`);
+        } else {
+            // Event
+            if (card.id === 'food_lotus') {
+                activeChar.statuses.push({ name: '莲花酥', type: 'Buff', value: 1 });
+            }
+            // ...其他事件卡逻辑
         }
-        
-        // 判定：打牌通常是快速行动
+
+        // 判定：打牌是快速行动
         handleTurnSwitch(false);
     } else {
         alert("费用不足");
@@ -139,7 +153,6 @@ globalBus.on('ACTION_PLAY_CARD', (data) => {
 });
 
 // 3. 玩家使用技能 (战斗行动)
-// 前端 view.js 需要发送 ACTION_USE_SKILL，带上 skillId
 globalBus.on('ACTION_USE_SKILL', (data) => {
     if (gameFSM.currentPhase !== PHASES.ACTION || gameState.activePlayerId !== 'p1') return;
 
@@ -149,14 +162,12 @@ globalBus.on('ACTION_USE_SKILL', (data) => {
     const target = opponent.characters[opponent.activeCharId];
 
     // 简化的技能数据 (实际应从 data.skillId 查找)
-    // 假设是普通攻击 (消耗1杂色1特定) 或 战技 (3特定)
-    // 这里为了演示，假设直接通过
     const skill = {
-        damage: { base: 3, element: attacker.element, type: 'Skill' },
+        damage: { base: 2, element: attacker.element, type: 'Skill' },
         cost: { count: 3, type: 'Matching' }
     };
 
-    // 费用检查 (略，假设已过)
+    // 费用检查 (略)
 
     console.log(`>>> ${attacker.name} 使用技能攻击 ${target.name}`);
     const ctx = DamagePipeline.calculate(attacker, target, skill, gameState);
@@ -165,22 +176,18 @@ globalBus.on('ACTION_USE_SKILL', (data) => {
     if (ctx.damageValue > 0) {
         target.hp = Math.max(0, target.hp - ctx.damageValue);
         console.log(`>>> 造成 ${ctx.damageValue} 伤害, 剩余HP: ${target.hp}`);
+
+        // 充能 (Rule 2.3.2)
+        attacker.energy = Math.min(attacker.maxEnergy, attacker.energy + 1);
     }
 
-    // 处理副作用 (Switch, Piercing)
+    // 处理副作用
     ctx.sideEffects.forEach(effect => {
         if (effect.type === 'REMOVE_STATUS') {
             const t = gameState.players.p1.characters[effect.targetId] || gameState.players.p2.characters[effect.targetId];
             if (t) t.statuses = t.statuses.filter(s => s.name !== effect.statusName);
         }
     });
-
-    // 检查死亡
-    if (target.hp === 0) {
-        target.isAlive = false;
-        console.log(">>> 目标倒下！");
-        // 检查游戏胜利 (略)
-    }
 
     handleTurnSwitch(true); // 战斗行动 -> 切换
 });
@@ -192,14 +199,14 @@ globalBus.on('ACTION_END_ROUND', () => {
     console.log(">>> 玩家宣布结束回合");
     gameState.players.p1.hasEndedRound = true;
 
-    // 抢先手逻辑
+    // 抢先手逻辑 (Rule 3.2.3)
     if (!gameState.players.p2.hasEndedRound) {
         gameState.players.p1.isFirst = true;
         gameState.players.p2.isFirst = false;
         console.log(">>> 玩家获得下回合先手");
     }
 
-    handleTurnSwitch(true); // 视为交还控制权
+    handleTurnSwitch(true);
 });
 
 // 5. 对手 AI
@@ -210,8 +217,6 @@ globalBus.on('CMD_OPPONENT_ACT', () => {
         const ai = gameState.players.p2;
         const player = gameState.players.p1;
         
-        // 简单AI：如果有骰子就攻击，否则结束
-        // 假设AI无限资源攻击一次然后结束 (为了测试流程)
         if (!ai.hasEndedRound) {
              const attacker = ai.characters[ai.activeCharId];
              const target = player.characters[player.activeCharId];
@@ -221,9 +226,7 @@ globalBus.on('CMD_OPPONENT_ACT', () => {
              const ctx = DamagePipeline.calculate(attacker, target, skill, gameState);
 
              target.hp = Math.max(0, target.hp - ctx.damageValue);
-             console.log(`>>> 玩家受到 ${ctx.damageValue} 伤害`);
 
-             // AI 结束回合
              ai.hasEndedRound = true;
              if (!player.hasEndedRound) {
                  gameState.players.p2.isFirst = true;
@@ -243,9 +246,10 @@ globalBus.on('CMD_END_PHASE_SETTLEMENT', () => {
 
     // 2. 状态持续时间 -1 (略)
 
-    // 3. 抽牌 (每人抽2张)
-    // 简单模拟
-    console.log(">>> 双方各抽2张牌");
+    // 3. 抽牌 (每人抽2张) (Rule 3.3)
+    console.log(">>> 结束阶段：双方各抽2张牌");
+    GameMechanics.drawCards(gameState.players.p1, 2);
+    GameMechanics.drawCards(gameState.players.p2, 2);
 
     // 进入下一回合
     setTimeout(() => {
