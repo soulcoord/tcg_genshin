@@ -1,0 +1,2233 @@
+[
+    {
+        "card_type": "Action",
+        "id": "白铁大剑",
+        "name": "白铁大剑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n白铁大剑\n行动牌\n武器  双手剑\n角色造成的伤害+1。（「双手剑」角色才能装备。角色最多装备1件「武器」）\n2\n描述：\n雪银之悼·白铁大剑用轻质的白铁打造而成的双手大剑，轻巧实用，闪着冰雪与白银的光芒。\n获取方式：\n完成来试试「七圣召唤」吧！后获得卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%99%BD%E9%93%81%E5%A4%A7%E5%89%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d3/9ym557lzbze7dok3ecm61p7nlm7et0p.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%99%BD%E9%93%81%E5%A4%A7%E5%89%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "祭礼剑",
+        "name": "祭礼剑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n祭礼剑\n行动牌\n武器  单手剑\n角色造成的伤害+1。角色使用「元素战技」后：生成1个此角色类型的元素骰。（每回合1次）（「单手剑」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n气定神闲·祭礼剑经历漫长岁月的道具用剑，在时间之风中变得如钢铁般锋利。\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A5%AD%E7%A4%BC%E5%89%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/ed/rhqp0iimgfrhbirbmebpau2wge69e6e.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A5%AD%E7%A4%BC%E5%89%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "祭礼大剑",
+        "name": "祭礼大剑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n祭礼大剑\n行动牌\n武器  双手剑\n角色造成的伤害+1。角色使用「元素战技」后：生成1个此角色类型的元素骰。（每回合1次）（「双手剑」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n气定神闲·祭礼大剑经历漫长岁月的大剑，曾属于善战勇猛而早夭的斗士一族。\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A5%AD%E7%A4%BC%E5%A4%A7%E5%89%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/af/it8hi8qjvsrg2cmz1nr0d32zc0zs14d.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A5%AD%E7%A4%BC%E5%A4%A7%E5%89%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "祭礼弓",
+        "name": "祭礼弓",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n祭礼弓\n行动牌\n武器  弓\n角色造成的伤害+1。角色使用「元素战技」后：生成1个此角色类型的元素骰。（每回合1次）（「弓」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n气定神闲·祭礼弓经历漫长岁月的猎弓，上面的仪式性装饰依然清晰可见。\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A5%AD%E7%A4%BC%E5%BC%93",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/bc/hzosu3c6jjjnrx0jvn01q0cadg7it3p.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A5%AD%E7%A4%BC%E5%BC%93.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "祭礼残章",
+        "name": "祭礼残章",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n祭礼残章\n行动牌\n武器  法器\n角色造成的伤害+1。角色使用「元素战技」后：生成1个此角色类型的元素骰。（每回合1次）（「法器」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n气定神闲·祭礼残章经历漫长岁月的歌谱残章，其上记载的颂词已经无法辨认。\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A5%AD%E7%A4%BC%E6%AE%8B%E7%AB%A0",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/83/4qb8wwdoak49myq4pygysp96m4q3w38.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A5%AD%E7%A4%BC%E6%AE%8B%E7%AB%A0.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "风鹰剑",
+        "name": "风鹰剑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n风鹰剑\n行动牌\n武器  单手剑\n角色造成的伤害+1。对方使用技能后：如果所附属角色为「出战角色」，则治疗该角色1点。（每回合至多2次）（「单手剑」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n听凭风引·风鹰剑异族斗士的佩剑，见证了她的跋涉与奋斗，最终见证她将自由与正义之风吹遍蒙德全地。\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%A3%8E%E9%B9%B0%E5%89%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/11/656uak9bywexmaltk8o72fabyzufoxm.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%A3%8E%E9%B9%B0%E5%89%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "魔导绪论",
+        "name": "魔导绪论",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n魔导绪论\n行动牌\n武器  法器\n角色造成的伤害+1。（「法器」角色才能装备。角色最多装备1件「武器」）\n2\n描述：\n止水息雷·魔导绪论第十二版《魔导绪论》。尽管部分内容错漏较多，但依旧是当今最权威的魔导入门指南。\n获取方式：\n完成来试试「七圣召唤」吧！后获得卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%AD%94%E5%AF%BC%E7%BB%AA%E8%AE%BA",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/9e/he124da9ttix42cvugqv5cogplltohw.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%AD%94%E5%AF%BC%E7%BB%AA%E8%AE%BA.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "鸦羽弓",
+        "name": "鸦羽弓",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n鸦羽弓\n行动牌\n武器  弓\n角色造成的伤害+1。（「弓」角色才能装备。角色最多装备1件「武器」）\n2\n描述：\n踏火止水·鸦羽弓相传渡鸦是死的使者。因此，猎人会将鸦羽装饰在弓臂上，射出的每一箭都宣告着猎物的终末。\n获取方式：\n完成来试试「七圣召唤」吧！后获得卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%B8%A6%E7%BE%BD%E5%BC%93",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/99/dr10ittuq03qe3c9rw1y8xrgt2szbyi.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%B8%A6%E7%BE%BD%E5%BC%93.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "「曾如磐石抵挡黑水奔流…」",
+        "name": "「曾如磐石抵挡黑水奔流…」",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n「曾如磐石抵挡黑水奔流…」\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为黑蛇骑士·摧岩之钺时，装备此牌。打出或行动阶段开始时：使黑蛇骑士·摧岩之钺附着岩元素。（牌组中包含黑蛇骑士·摧岩之钺，才能加入牌组）\n1\n描述：\n「曾如磐石抵挡黑水奔流…」「在王国最黑暗的时刻，肩负守护职责的武人有时并没有选择的余裕。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度黑蛇骑士·摧岩之钺中完成挑战目标后获取。\n实装版本：\n月之三",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E3%80%8C%E6%9B%BE%E5%A6%82%E7%A3%90%E7%9F%B3%E6%8A%B5%E6%8C%A1%E9%BB%91%E6%B0%B4%E5%A5%94%E6%B5%81%E2%80%A6%E3%80%8D",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f6/t9051swszm45o3r0266njr9vzvw8i69.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E3%80%8C%E6%9B%BE%E5%A6%82%E7%A3%90%E7%9F%B3%E6%8A%B5%E6%8C%A1%E9%BB%91%E6%B0%B4%E5%A5%94%E6%B5%81%E2%80%A6%E3%80%8D.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "虹彩缤纷的甜点茶话",
+        "name": "虹彩缤纷的甜点茶话",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n虹彩缤纷的甜点茶话\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为爱可菲时，装备此牌。爱可菲装备此牌后，立刻使用一次低温烹饪。我方其他角色使用「普通攻击」后：触发我方厨艺机关·低温冷藏模式的「结束阶段」效果。（不消耗使用次数，每回合1次）（牌组中包含爱可菲，才能加入牌组）\n4\n描述：\n爱可菲·虹彩缤纷的甜点茶话「臻品呈现！」\n获取方式：\n在猫尾酒馆中邀请爱可菲进行对局，完成相应挑战目标后获取。\n实装版本：\n月之三",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%99%B9%E5%BD%A9%E7%BC%A4%E7%BA%B7%E7%9A%84%E7%94%9C%E7%82%B9%E8%8C%B6%E8%AF%9D",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/e3/fh0e6o7za111v9q8linx2buwgzt5w1q.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%99%B9%E5%BD%A9%E7%BC%A4%E7%BA%B7%E7%9A%84%E7%94%9C%E7%82%B9%E8%8C%B6%E8%AF%9D.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "通明庇佑",
+        "name": "通明庇佑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            },
+            {
+                "count": 3,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n通明庇佑\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为嘉明时，装备此牌。嘉明装备此牌后，立刻使用一次璨焰金猊舞。所附属角色进行下落攻击时：伤害额外+1。所附属角色使用「元素战技」后：治疗所附属角色2点。（每回合1次）（牌组中包含嘉明，才能加入牌组）\n3\n3\n描述：\n嘉明·通明庇佑「文仔，到你出马！」\n获取方式：\n在猫尾酒馆中邀请嘉明进行对局，完成相应挑战目标后获取。\n实装版本：\n月之三",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%80%9A%E6%98%8E%E5%BA%87%E4%BD%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f7/favbjmoz4ow1cer0re8kwam7jjguuly.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%80%9A%E6%98%8E%E5%BA%87%E4%BD%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "「沃陆之邦」的训教",
+        "name": "「沃陆之邦」的训教",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n「沃陆之邦」的训教\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为伊安珊时，装备此牌。伊安珊装备此牌后，立刻使用一次力的三原理。装备有此牌的伊安珊生成的动能标示，初始可用次数+1。（牌组中包含伊安珊，才能加入牌组）\n3\n2\n描述：\n伊安珊·「沃陆之邦」的训教「听我的口号！」\n获取方式：\n在猫尾酒馆中邀请伊安珊进行对局，完成相应挑战目标后获取。\n实装版本：\n月之一",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E3%80%8C%E6%B2%83%E9%99%86%E4%B9%8B%E9%82%A6%E3%80%8D%E7%9A%84%E8%AE%AD%E6%95%99",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/9d/nxzpdbyg6fs6w7z3i10lh6k5nh300i1.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E3%80%8C%E6%B2%83%E9%99%86%E4%B9%8B%E9%82%A6%E3%80%8D%E7%9A%84%E8%AE%AD%E6%95%99.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "缠忆君影梦相见",
+        "name": "缠忆君影梦相见",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n缠忆君影梦相见\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为梦见月瑞希时，装备此牌。梦见月瑞希装备此牌后，立刻使用一次秋沙歌枕巡礼。如果梦见月瑞希是出战角色，则我方造成的冰元素伤害水元素伤害火元素伤害雷元素伤害+1。（包括角色引发的任意元素扩散的伤害，每回合2次）（牌组中包含梦见月瑞希，才能加入牌组）\n3\n描述：\n梦见月瑞希·缠忆君影梦相见「…晓时枕貘醒春风。」\n获取方式：\n在猫尾酒馆中邀请梦见月瑞希进行对局，完成相应挑战目标后获取。\n实装版本：\n月之一",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%BC%A0%E5%BF%86%E5%90%9B%E5%BD%B1%E6%A2%A6%E7%9B%B8%E8%A7%81",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/61/bx9njfscqta4hd8ktslo96gdij83vqz.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%BC%A0%E5%BF%86%E5%90%9B%E5%BD%B1%E6%A2%A6%E7%9B%B8%E8%A7%81.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "奇想天开捕物帐",
+        "name": "奇想天开捕物帐",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n奇想天开捕物帐\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为鹿野院平藏时，装备此牌。鹿野院平藏装备此牌后，立刻使用一次勠心拳。变格提高的伤害额外+1。（牌组中包含鹿野院平藏，才能加入牌组）\n3\n描述：\n鹿野院平藏·奇想天开捕物帐「破开迷雾！」\n获取方式：\n在猫尾酒馆中邀请鹿野院平藏进行对局，完成相应挑战目标后获取。\n实装版本：\n5.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A5%87%E6%83%B3%E5%A4%A9%E5%BC%80%E6%8D%95%E7%89%A9%E5%B8%90",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/a5/1jwquhvrv85ka0fkheozvip71vvvoby.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A5%87%E6%83%B3%E5%A4%A9%E5%BC%80%E6%8D%95%E7%89%A9%E5%B8%90.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "舞袂翩兮扬玉霓",
+        "name": "舞袂翩兮扬玉霓",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n舞袂翩兮扬玉霓\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为蓝砚时，装备此牌。蓝砚装备此牌后，立刻使用一次凤缕随翦舞。装备有此牌的蓝砚在场，我方角色进行普通攻击时：获得1层凤缕护盾。（每回合1次）（牌组中包含蓝砚，才能加入牌组）\n3\n描述：\n蓝砚·舞袂翩兮扬玉霓「搬疾运厄。」\n获取方式：\n在猫尾酒馆中邀请蓝砚进行对局，完成相应挑战目标后获取。\n实装版本：\n5.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%88%9E%E8%A2%82%E7%BF%A9%E5%85%AE%E6%89%AC%E7%8E%89%E9%9C%93",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/c8/e6tzh50sqxcg99p777p7ov6jsrs771z.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%88%9E%E8%A2%82%E7%BF%A9%E5%85%AE%E6%89%AC%E7%8E%89%E9%9C%93.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "丛山锻火驰行",
+        "name": "丛山锻火驰行",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n丛山锻火驰行\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为希诺宁时，装备此牌。希诺宁装备此牌后，立刻使用一次音火锻淬。装备有此牌的希诺宁在场时：切换至希诺宁或由希诺宁切换至其他角色时，若目标处于夜魂加持状态，则回复1点夜魂值。（每回合2次）（牌组中包含希诺宁，才能加入牌组）\n2\n描述：\n希诺宁·丛山锻火驰行「沸腾吧，山之血！」\n获取方式：\n在猫尾酒馆中邀请夏洛蒂进行对局，完成相应挑战目标后获取。\n实装版本：\n5.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%B8%9B%E5%B1%B1%E9%94%BB%E7%81%AB%E9%A9%B0%E8%A1%8C",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/8d/t820h5v8zsm9cud0gjufqf186fzrv09.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%B8%9B%E5%B1%B1%E9%94%BB%E7%81%AB%E9%A9%B0%E8%A1%8C.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "所有的仇与债皆由我偿…",
+        "name": "所有的仇与债皆由我偿…",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n所有的仇与债皆由我偿…\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为阿蕾奇诺时，对该角色打出。使阿蕾奇诺附属3层生命之契。装备有此牌的阿蕾奇诺受到伤害时，若可能，消耗1层生命之契，以抵消1点伤害。（牌组中包含阿蕾奇诺，才能加入牌组）\n1\n描述：\n阿蕾奇诺·所有的仇与债皆由我偿…「如月长存。」\n获取方式：\n在猫尾酒馆中邀请阿蕾奇诺进行对局，完成相应挑战目标后获取。\n实装版本：\n5.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%89%80%E6%9C%89%E7%9A%84%E4%BB%87%E4%B8%8E%E5%80%BA%E7%9A%86%E7%94%B1%E6%88%91%E5%81%BF%E2%80%A6",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d4/2fyzb44qk5wl7zyoc5eqmm6nj6hqoqq.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%89%80%E6%9C%89%E7%9A%84%E4%BB%87%E4%B8%8E%E5%80%BA%E7%9A%86%E7%94%B1%E6%88%91%E5%81%BF%E2%80%A6.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "破夜的明焰",
+        "name": "破夜的明焰",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n破夜的明焰\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为克洛琳德时，装备此牌。克洛琳德装备此牌后，立刻使用一次狩夜之巡。我方角色引发雷元素相关反应后：本回合克洛琳德下次造成的伤害+1。（可叠加，最多叠加到+3）（牌组中包含克洛琳德，才能加入牌组）\n2\n描述：\n克洛琳德·破夜的明焰「洞见恶孽，逐灭鬼影！」\n获取方式：\n在猫尾酒馆中邀请克洛琳德进行对局，完成相应挑战目标后获取。\n实装版本：\n5.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A0%B4%E5%A4%9C%E7%9A%84%E6%98%8E%E7%84%B0",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/fe/4ci3vog89acow94yx7cu7508sytwe8b.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A0%B4%E5%A4%9C%E7%9A%84%E6%98%8E%E7%84%B0.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "代行裁判",
+        "name": "代行裁判",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n代行裁判\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为罗莎莉亚时，装备此牌。罗莎莉亚装备此牌后，立刻使用一次噬罪的告解。装备有此牌的罗莎莉亚在场时：使用噬罪的告解，或我方生成强攻破绽后，在手牌中生成1张换班时间。（每回合1次）（牌组中包含罗莎莉亚，才能加入牌组）\n3\n描述：\n罗莎莉亚·代行裁判「晚安了…」\n获取方式：\n在猫尾酒馆中邀请罗莎莉亚进行对局，完成相应挑战目标后获取。\n实装版本：\n5.2",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BB%A3%E8%A1%8C%E8%A3%81%E5%88%A4",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f1/j53cz2tw0kc1mfrgxwygmmv1dsw5dsn.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BB%A3%E8%A1%8C%E8%A3%81%E5%88%A4.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "应当有适当的休憩",
+        "name": "应当有适当的休憩",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n应当有适当的休憩\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为希格雯时，装备此牌。希格雯装备此牌后，立刻使用一次弹跳水疗法。装备有此牌的希格雯使用弹跳水疗法后，使我方接下来2次「元素战技」或召唤物造成的伤害+1。（牌组中包含希格雯，才能加入牌组）\n3\n描述：\n希格雯·应当有适当的休憩「别紧张哦，放松。」\n获取方式：\n在猫尾酒馆中邀请希格雯进行对局，完成相应挑战目标后获取。\n实装版本：\n5.2",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%BA%94%E5%BD%93%E6%9C%89%E9%80%82%E5%BD%93%E7%9A%84%E4%BC%91%E6%86%A9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/7/74/l1a7706bzkpcm4kouu8o39sic09u4ed.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%BA%94%E5%BD%93%E6%9C%89%E9%80%82%E5%BD%93%E7%9A%84%E4%BC%91%E6%86%A9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "异兽侵蚀",
+        "name": "异兽侵蚀",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n异兽侵蚀\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为黄金王兽时，装备此牌。黄金王兽装备此牌后，立刻使用一次兽境轰召。装备有此牌的黄金王兽在场时，对方的黄金侵蚀最多可叠加到5次，并且所附属角色不在后台时也会生效。（牌组中包含黄金王兽，才能加入牌组）\n3\n描述：\n黄金王兽·异兽侵蚀「王兽并没有名字，因为本身不过是「黄金」无心的造物；正因如此，才会更执着于侵入不属于它的世界，以自己的力量争取名号吧。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度黄金王兽中完成挑战目标后获取。\n实装版本：\n5.2",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%BC%82%E5%85%BD%E4%BE%B5%E8%9A%80",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/6b/559uv3jq06yczdlv0jlasp25k3z72ah.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%BC%82%E5%85%BD%E4%BE%B5%E8%9A%80.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "灵蛇旋嘶",
+        "name": "灵蛇旋嘶",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n灵蛇旋嘶\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为镀金旅团·叶轮舞者时，装备此牌。镀金旅团·叶轮舞者装备此牌后，立刻使用一次蔓延旋舞。装备有此牌的镀金旅团·叶轮舞者在场，我方装备了厄灵·草之灵蛇的角色切换至出战时：造成1点草元素伤害。（每回合1次）（牌组中包含镀金旅团·叶轮舞者，才能加入牌组）\n3\n描述：\n叶轮舞者·灵蛇旋嘶「…如今即使他们的神与王都尽数沉入流沙，舞蹈的记忆依然留存在民族的血脉中。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度镀金旅团·叶轮舞者中完成挑战目标后获取。\n实装版本：\n5.1",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%81%B5%E8%9B%87%E6%97%8B%E5%98%B6",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/a3/tdxjvjkgbc4ok1n67y546drzk1trbif.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%81%B5%E8%9B%87%E6%97%8B%E5%98%B6.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "落染五色",
+        "name": "落染五色",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n落染五色\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为千织时，装备此牌。千织装备此牌后，立刻使用一次羽袖一触。装备有此牌的千织使用羽袖一触时：额外召唤1个平静养神之袖，并改为从4个千织的自动制御人形中挑选1个并召唤。（牌组中包含千织，才能加入牌组）\n4\n描述：\n千织·落染五色「千红零落。」\n获取方式：\n在猫尾酒馆中邀请千织进行对局，完成相应挑战目标后获取。\n实装版本：\n5.1",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%90%BD%E6%9F%93%E4%BA%94%E8%89%B2",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/4a/7mgruwz171oi3pxg1vh3vjxbm76k0p7.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%90%BD%E6%9F%93%E4%BA%94%E8%89%B2.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "梦晓与决意之刻",
+        "name": "梦晓与决意之刻",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n梦晓与决意之刻\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为菲米尼时，装备此牌。菲米尼装备此牌后，立刻使用一次浮冰增压。装备有此牌的菲米尼使用技能后，抓1张牌。（每回合至多触发2次）（牌组中包含菲米尼，才能加入牌组）\n3\n描述：\n菲米尼·梦晓与决意之刻「下潜…就绪。」\n获取方式：\n在猫尾酒馆中邀请菲米尼进行对局，完成相应挑战目标后获取。\n实装版本：\n5.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%A2%A6%E6%99%93%E4%B8%8E%E5%86%B3%E6%84%8F%E4%B9%8B%E5%88%BB",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d6/63ht9m1x11nt49jfm44cxgmgzsvya76.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%A2%A6%E6%99%93%E4%B8%8E%E5%86%B3%E6%84%8F%E4%B9%8B%E5%88%BB.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "知是留云僊",
+        "name": "知是留云僊",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n知是留云僊\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为闲云时，装备此牌。闲云装备此牌后，立刻使用一次朝起鹤云。我方切换角色时，此牌累积1层「风翎」。（每回合最多累积2层）装备有此牌的闲云使用清风散花词时，消耗所有「风翎」，每消耗1层都使伤害+1。（牌组中包含闲云，才能加入牌组）\n3\n描述：\n闲云·知是留云僊「风汇，孤云与归。」\n获取方式：\n在猫尾酒馆中邀请闲云进行对局，完成相应挑战目标后获取。\n实装版本：\n5.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%9F%A5%E6%98%AF%E7%95%99%E4%BA%91%E5%83%8A",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/cb/k02t4qsjauz8kx24hpgv5hip20hkgvo.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%9F%A5%E6%98%AF%E7%95%99%E4%BA%91%E5%83%8A.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "轻盈水沫",
+        "name": "轻盈水沫",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n轻盈水沫\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为丘丘水行游侠时，装备此牌。丘丘水行游侠装备此牌后，立刻使用一次狂澜镰击。装备有此牌的丘丘水行游侠在场，我方使用「特技」时：少花费1个元素骰。（每回合1次）（牌组中包含丘丘水行游侠，才能加入牌组）\n3\n描述：\n丘丘水行游侠·水镖史莱姆「 slimo movo！」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度丘丘水行游侠中完成挑战目标后获取。\n实装版本：\n5.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%BD%BB%E7%9B%88%E6%B0%B4%E6%B2%AB",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/3d/ov61mvrazfx657rcvwo68xc10r8vwu9.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%BD%BB%E7%9B%88%E6%B0%B4%E6%B2%AB.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "不明流通渠道",
+        "name": "不明流通渠道",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n不明流通渠道\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为娜维娅时，装备此牌。娜维娅装备此牌后，立刻使用一次典仪式晶火。装备有此牌的娜维娅使用技能后：抓2张裂晶弹片。（每回合1次）（牌组中包含娜维娅，才能加入牌组）\n3\n描述：\n娜维娅·不明流通渠道「哪来的？！」\n获取方式：\n在猫尾酒馆中邀请娜维娅进行对局，完成相应挑战目标后获取。\n实装版本：\n4.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%B8%8D%E6%98%8E%E6%B5%81%E9%80%9A%E6%B8%A0%E9%81%93",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/0d/8xmn30latv7561msj0dhv2jap6y19qv.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%B8%8D%E6%98%8E%E6%B5%81%E9%80%9A%E6%B8%A0%E9%81%93.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "冰雅刺剑",
+        "name": "冰雅刺剑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n冰雅刺剑\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为愚人众·霜役人时，装备此牌。愚人众·霜役人装备此牌后，立刻使用一次霜刃截击。装备有此牌的愚人众·霜役人触发血契掠影后：使敌方出战角色的生命之契层数翻倍。（牌组中包含愚人众·霜役人，才能加入牌组）\n3\n描述：\n霜役人·冰雅刺剑「恕我之前招待不周。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·霜役人中完成挑战目标后获取。\n实装版本：\n4.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%86%B0%E9%9B%85%E5%88%BA%E5%89%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/85/qwu0pr760mm76hwkjjd45jeweqykdex.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%86%B0%E9%9B%85%E5%88%BA%E5%89%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "「诸君听我颂，共举爱之杯！」",
+        "name": "「诸君听我颂，共举爱之杯！」",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n「诸君听我颂，共举爱之杯！」\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为芙宁娜时，装备此牌。芙宁娜装备此牌后，立刻使用一次孤心沙龙。装备有此牌的芙宁娜使用孤心沙龙时，会对自身附属万众瞩目。（角色普通攻击时根据形态触发不同效果）（牌组中包含芙宁娜，才能加入牌组）\n3\n描述：\n芙宁娜·「诸君听我颂，共举爱之杯！」「让世界热闹起来吧。」\n获取方式：\n在猫尾酒馆中邀请芙宁娜进行对局，完成相应挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E3%80%8C%E8%AF%B8%E5%90%9B%E5%90%AC%E6%88%91%E9%A2%82%EF%BC%8C%E5%85%B1%E4%B8%BE%E7%88%B1%E4%B9%8B%E6%9D%AF%EF%BC%81%E3%80%8D",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/5/5c/m4uj38vwshzb2n6epwo0jyzr8aupky8.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E3%80%8C%E8%AF%B8%E5%90%9B%E5%90%AC%E6%88%91%E9%A2%82%EF%BC%8C%E5%85%B1%E4%B8%BE%E7%88%B1%E4%B9%8B%E6%9D%AF%EF%BC%81%E3%80%8D.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "予行恶者以惩惧",
+        "name": "予行恶者以惩惧",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Cryo"
+            },
+            {
+                "count": 2,
+                "type": "Unaligned"
+            }
+        ],
+        "description": "装备牌\n予行恶者以惩惧\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为莱欧斯利时，装备此牌。莱欧斯利装备此牌后，立刻使用一次迅烈倾霜拳。装备有此牌的莱欧斯利受到伤害或治疗后，此牌累积1点「惩戒计数」。装备有此牌的莱欧斯利使用技能时：如果已有3点「惩戒计数」，则消耗3点使此技能伤害+1。（牌组中包含莱欧斯利，才能加入牌组）\n1\n2\n描述：\n莱欧斯利·予行恶者以惩惧「无需畏惧，直面罪责。」\n获取方式：\n在猫尾酒馆中邀请莱欧斯利进行对局，完成相应挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BA%88%E8%A1%8C%E6%81%B6%E8%80%85%E4%BB%A5%E6%83%A9%E6%83%A7",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/39/o0yhlsau00eyaztem54wtsobrtucjtr.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BA%88%E8%A1%8C%E6%81%B6%E8%80%85%E4%BB%A5%E6%83%A9%E6%83%A7.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "地狱里摇摆",
+        "name": "地狱里摇摆",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            },
+            {
+                "count": 2,
+                "type": "Unaligned"
+            }
+        ],
+        "description": "装备牌\n地狱里摇摆\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为辛焱时，装备此牌。辛焱装备此牌后，立刻使用一次炎舞。装备有此牌的辛焱使用技能时：如果我方手牌数量不多于1，则造成的伤害+2。（每回合1次）（牌组中包含辛焱，才能加入牌组）\n1\n2\n描述：\n辛焱·地狱里摇摆「听我的最强音！」\n获取方式：\n在猫尾酒馆中邀请辛焱进行对局，完成相应挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%9C%B0%E7%8B%B1%E9%87%8C%E6%91%87%E6%91%86",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d7/lpvszug0d29rxdywgviq21xv9io7c8q.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%9C%B0%E7%8B%B1%E9%87%8C%E6%91%87%E6%91%86.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "庄谐并举",
+        "name": "庄谐并举",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n庄谐并举\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为云堇时，装备此牌。云堇装备此牌后，立刻使用一次破嶂见旌仪。装备有此牌的云堇在场，且我方触发飞云旗阵时：如果我方没有手牌，则使此次技能伤害+2。（牌组中包含云堇，才能加入牌组）\n3\n2\n描述：\n云堇·庄谐并举「戮力同心！」\n获取方式：\n在猫尾酒馆中邀请云堇进行对局，完成相应挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%BA%84%E8%B0%90%E5%B9%B6%E4%B8%BE",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/3d/8gkbiyesv4pytlg59uwves3xvns7vkh.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%BA%84%E8%B0%90%E5%B9%B6%E4%B8%BE.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "无光鲸噬",
+        "name": "无光鲸噬",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n无光鲸噬\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为吞星之鲸时，装备此牌。吞星之鲸装备此牌后，立刻使用一次迸落星雨。装备有此牌的吞星之鲸使用迸落星雨舍弃1张手牌后：治疗此角色该手牌元素骰费用的点数。（每回合1次）（牌组中包含吞星之鲸，才能加入牌组）\n4\n描述：\n吞星之鲸·无光鲸噬梦中无月的漆黑海面上，尽是闪着磷光的浮游生物——或许正如某种巨兽的食粮。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度吞星之鲸中完成挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%97%A0%E5%85%89%E9%B2%B8%E5%99%AC",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/ce/7uamd7sjkawd1msbgs1kg789ton8svz.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%97%A0%E5%85%89%E9%B2%B8%E5%99%AC.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "预算师的技艺",
+        "name": "预算师的技艺",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n预算师的技艺\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为卡维时，装备此牌。卡维装备此牌后，立刻使用一次画则巧施。装备有此牌的卡维在场，我方触发迸发扫描的效果后：将1张所舍弃卡牌的复制加入你的手牌。如果该牌为「场地」牌，则使本回合中我方下次打出「场地」时少花费2个元素骰。（每回合1次）（牌组中包含卡维，才能加入牌组）\n3\n描述：\n卡维·预算师的技艺「万众瞩目！」\n获取方式：\n在猫尾酒馆中邀请卡维进行对局，完成相应挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%A2%84%E7%AE%97%E5%B8%88%E7%9A%84%E6%8A%80%E8%89%BA",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/4b/f07fa6yjrw1hp54ykwfg4u5x58h2zhr.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%A2%84%E7%AE%97%E5%B8%88%E7%9A%84%E6%8A%80%E8%89%BA.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "割舍软弱之心",
+        "name": "割舍软弱之心",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Electro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n割舍软弱之心\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为久岐忍时，装备此牌。久岐忍装备此牌后，立刻使用一次御咏鸣神刈山祭。装备有此牌的久岐忍被击倒时：角色免于被击倒，并治疗该角色到1点生命值。（每回合1次）如果装备有此牌的久岐忍生命值不多于5，则该角色造成的伤害+1。（牌组中包含久岐忍，才能加入牌组）\n4\n2\n描述：\n久岐忍·割舍软弱之心「祈雷祓除！」\n获取方式：\n在猫尾酒馆中邀请久岐忍进行对局，完成相应挑战目标后获取。\n实装版本：\n4.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%89%B2%E8%88%8D%E8%BD%AF%E5%BC%B1%E4%B9%8B%E5%BF%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/67/4bpfp0kh37ovvfxxxfsheb8w4wlcr7g.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%89%B2%E8%88%8D%E8%BD%AF%E5%BC%B1%E4%B9%8B%E5%BF%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "妙道合真",
+        "name": "妙道合真",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n妙道合真\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为珐露珊时，装备此牌。珐露珊装备此牌后，立刻使用一次抟风秘道。装备有此牌的珐露珊所生成的赫耀多方面体，会在其入场时和行动阶段开始时生成1个风元素。（牌组中包含珐露珊，才能加入牌组）\n3\n2\n描述：\n珐露珊·妙道合真「真理，复始周转。」\n获取方式：\n在猫尾酒馆中邀请珐露珊进行对局，完成相应挑战目标后获取。\n实装版本：\n4.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A6%99%E9%81%93%E5%90%88%E7%9C%9F",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f3/92sr3l0w5jm1uofr79hluvvw3tfcfo0.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A6%99%E9%81%93%E5%90%88%E7%9C%9F.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "以有趣相关为要义",
+        "name": "以有趣相关为要义",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n以有趣相关为要义\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为夏洛蒂时，装备此牌。夏洛蒂装备此牌后，立刻使用一次取景·冰点构图法。装备有此牌的夏洛蒂在场时，我方角色进行普通攻击后：如果对方场上有角色附属有瞬时剪影，则治疗我方出战角色2点。（每回合1次）（牌组中包含夏洛蒂，才能加入牌组）\n3\n描述：\n夏洛蒂·以有趣相关为要义「爆炸新闻！」\n获取方式：\n在猫尾酒馆中邀请夏洛蒂进行对局，完成相应挑战目标后获取。\n实装版本：\n4.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BB%A5%E6%9C%89%E8%B6%A3%E7%9B%B8%E5%85%B3%E4%B8%BA%E8%A6%81%E4%B9%89",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/af/izwrbpw4gm6o6by9go3c3qcczsam4et.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BB%A5%E6%9C%89%E8%B6%A3%E7%9B%B8%E5%85%B3%E4%B8%BA%E8%A6%81%E4%B9%89.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "古海孑遗的权柄",
+        "name": "古海孑遗的权柄",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Hydro"
+            },
+            {
+                "count": 2,
+                "type": "Unaligned"
+            }
+        ],
+        "description": "装备牌\n古海孑遗的权柄\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为那维莱特时，装备此牌。那维莱特装备此牌后，立刻使用一次如水从平。我方角色引发水元素相关反应后：装备有此牌的那维莱特接下来2次造成的伤害+1。（牌组中包含那维莱特，才能加入牌组）\n1\n2\n描述：\n那维莱特·古海孑遗的权柄「潮水啊，我已归来。」\n获取方式：\n在猫尾酒馆中邀请那维莱特进行对局，完成相应挑战目标后获取。\n实装版本：\n4.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%8F%A4%E6%B5%B7%E5%AD%91%E9%81%97%E7%9A%84%E6%9D%83%E6%9F%84",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/bd/rnyqohta5p177ikmgka9k49k0mijp4s.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%8F%A4%E6%B5%B7%E5%AD%91%E9%81%97%E7%9A%84%E6%9D%83%E6%9F%84.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "沿途百景会心",
+        "name": "沿途百景会心",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n沿途百景会心\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为绮良良时，装备此牌。绮良良装备此牌后，立刻使用一次呜喵町飞足。装备有此牌的绮良良为出战角色，我方进行「切换角色」行动时：少花费1个元素骰。（每回合1次）（牌组中包含绮良良，才能加入牌组）\n3\n描述：\n绮良良·沿途百景会心「记得好评~」\n获取方式：\n在猫尾酒馆中邀请绮良良进行对局，完成相应挑战目标后获取。\n实装版本：\n4.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B2%BF%E9%80%94%E7%99%BE%E6%99%AF%E4%BC%9A%E5%BF%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/da/in7jxh9typw8c2femoul5mbimz2i59s.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B2%BF%E9%80%94%E7%99%BE%E6%99%AF%E4%BC%9A%E5%BF%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "雷萤浮闪",
+        "name": "雷萤浮闪",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n雷萤浮闪\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为愚人众·雷萤术士时，装备此牌。愚人众·雷萤术士装备此牌后，立刻使用一次雾虚之召。装备有此牌的愚人众·雷萤术士在场时，我方选择行动前：如果雷萤的可用次数至少为3，则雷萤立刻造成1点雷元素伤害。（需消耗可用次数，每回合1次）（牌组中包含愚人众·雷萤术士，才能加入牌组）\n3\n描述：\n雷萤术士·雷萤浮闪「你是，来陪我玩的吗?」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·雷萤术士中完成挑战目标后获取。\n实装版本：\n4.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%9B%B7%E8%90%A4%E6%B5%AE%E9%97%AA",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/37/8tqc47aal6bunxnexx5t7ix30xk9wi2.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%9B%B7%E8%90%A4%E6%B5%AE%E9%97%AA.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "偷懒的新方法",
+        "name": "偷懒的新方法",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n偷懒的新方法\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为早柚时，装备此牌。早柚装备此牌后，立刻使用一次鸣呼流·风隐急进。装备有此牌的早柚为出战角色期间，我方引发扩散反应时：抓2张牌。（每回合1次）（牌组中包含早柚，才能加入牌组）\n3\n描述：\n早柚·偷懒的新方法「工作还不如睡觉。」\n获取方式：\n在猫尾酒馆中邀请早柚进行对局，完成相应挑战目标后获取。\n实装版本：\n4.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%81%B7%E6%87%92%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/01/6bks9krfhoodyl9tpga1x46bm6zf8ae.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%81%B7%E6%87%92%E7%9A%84%E6%96%B0%E6%96%B9%E6%B3%95.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "僚佐的才巧",
+        "name": "僚佐的才巧",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n僚佐的才巧\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为托马时，装备此牌。托马装备此牌后，立刻使用一次真红炽火之大铠。装备有此牌的托马生成的炽火大铠，初始可用次数+1。（牌组中包含托马，才能加入牌组）\n3\n2\n描述：\n托马·僚佐的才巧「我会连带着为了你的份一起，好好努力的！」\n获取方式：\n在猫尾酒馆中邀请托马进行对局，完成相应挑战目标后获取。\n实装版本：\n4.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%83%9A%E4%BD%90%E7%9A%84%E6%89%8D%E5%B7%A7",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/a2/i5jmrjze8szuaxffhum2p3rqgqq6lpy.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%83%9A%E4%BD%90%E7%9A%84%E6%89%8D%E5%B7%A7.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "如影流露的冷刃",
+        "name": "如影流露的冷刃",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n如影流露的冷刃\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为琳妮特时，装备此牌。琳妮特装备此牌后，立刻使用一次谜影障身法。装备有此牌的琳妮特每回合第二次使用谜影障身法时：伤害+2，并强制敌方切换到前一个角色。（牌组中包含琳妮特，才能加入牌组）\n3\n描述：\n琳妮特·如影流露的冷刃「一点把戏。」\n获取方式：\n在猫尾酒馆中邀请琳妮特进行对局，完成相应挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A6%82%E5%BD%B1%E6%B5%81%E9%9C%B2%E7%9A%84%E5%86%B7%E5%88%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/a0/9suvspvbs40frj9ptjuf9v84k1i6wuw.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A6%82%E5%BD%B1%E6%B5%81%E9%9C%B2%E7%9A%84%E5%86%B7%E5%88%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "完场喝彩",
+        "name": "完场喝彩",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n完场喝彩\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为林尼时，装备此牌。林尼装备此牌后，立刻使用一次隐具魔术箭。装备有此牌的林尼在场时，林尼自身和怪笑猫猫帽对具有火元素附着的角色造成的伤害+2。（每回合1次）（牌组中包含林尼，才能加入牌组）\n3\n描述：\n林尼·完场喝彩「响起你的掌声！」\n获取方式：\n在猫尾酒馆中邀请林尼进行对局，完成相应挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%AE%8C%E5%9C%BA%E5%96%9D%E5%BD%A9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/1c/ko4tin99wyvwwf7wzwmyl3hvlbegyem.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%AE%8C%E5%9C%BA%E5%96%9D%E5%BD%A9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "归芒携信",
+        "name": "归芒携信",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n归芒携信\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为莱依拉时，装备此牌。莱依拉装备此牌后，立刻使用一次垂裳端凝之夜。装备有此牌的莱依拉在场时，每当飞星造成伤害，就抓1张牌。（牌组中包含莱依拉，才能加入牌组）\n3\n描述：\n莱依拉·归芒携信「星星的加护。」\n获取方式：\n在猫尾酒馆中邀请莱依拉进行对局，完成相应挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%BD%92%E8%8A%92%E6%90%BA%E4%BF%A1",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/c7/fxedhtgslyiuon1cfvox55bg32ig141.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%BD%92%E8%8A%92%E6%90%BA%E4%BF%A1.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "悲号回唱",
+        "name": "悲号回唱",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n悲号回唱\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为雷音权现时，装备此牌。雷音权现装备此牌后，立刻使用一次雷墙倾轧。装备有此牌的雷音权现在场，附属有雷鸣探知的敌方角色受到伤害时：我方抓1张牌。（每回合1次）（牌组中包含雷音权现，才能加入牌组）\n3\n描述：\n雷音权现·悲号回唱驱动雷音权现的是更为原始纯粹的愤怒…\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度雷音权现中完成挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%82%B2%E5%8F%B7%E5%9B%9E%E5%94%B1",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/05/f9re2ljhmqg9h8134n69go9dqj91lkx.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%82%B2%E5%8F%B7%E5%9B%9E%E5%94%B1.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "正理",
+        "name": "正理",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n正理\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为艾尔海森时，装备此牌。艾尔海森装备此牌后，立刻使用一次殊境·显象缚结。装备有此牌的艾尔海森使用殊境·显象缚结时：如果消耗了持续回合至少为1的琢光镜，则总是附属持续回合为3的琢光镜，并且抓1张牌。（牌组中包含艾尔海森，才能加入牌组）\n3\n2\n描述：\n艾尔海森·正理「理论的推演。」\n获取方式：\n在猫尾酒馆中邀请艾尔海森进行对局，完成相应挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%AD%A3%E7%90%86",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/5/50/mkb5ei3rx72beur45xtl5disn1n6a3m.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%AD%A3%E7%90%86.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "毁裂风涡",
+        "name": "毁裂风涡",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n毁裂风涡\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为特瓦林时，装备此牌。特瓦林装备此牌后，立刻使用一次暴风轰击。装备有此牌的特瓦林在场时，敌方出战角色所附属的坍毁状态被移除后：对下一个敌方后台角色附属坍毁。（每回合1次）（牌组中包含特瓦林，才能加入牌组）\n3\n描述：\n特瓦林·毁裂风涡尘埃能被轻易拭去，疑惧与毒也能被粉碎\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度特瓦林中完成挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%AF%81%E8%A3%82%E9%A3%8E%E6%B6%A1",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d3/mm3acxyqplcawl2mighfg91amhyht5d.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%AF%81%E8%A3%82%E9%A3%8E%E6%B6%A1.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "犬奔·疾如风",
+        "name": "犬奔·疾如风",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n犬奔·疾如风\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为五郎时，装备此牌。五郎装备此牌后，立刻使用一次犬坂吠吠方圆阵。装备有此牌的五郎在场时，我方角色造成岩元素伤害后：如果场上存在大将旗指物，抓1张牌。（每回合1次）（牌组中包含五郎，才能加入牌组）\n3\n描述：\n五郎·犬奔·疾如风「兵贵先声！」\n获取方式：\n在猫尾酒馆中邀请五郎进行对局，完成相应挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%8A%AC%E5%A5%94%C2%B7%E7%96%BE%E5%A6%82%E9%A3%8E",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/3a/tvu0yhle4jziczby269fiqksg7km8ce.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%8A%AC%E5%A5%94%C2%B7%E7%96%BE%E5%A6%82%E9%A3%8E.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "猜先有方",
+        "name": "猜先有方",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n猜先有方\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为夜兰时，装备此牌。夜兰装备此牌后，立刻使用一次萦络纵命索。投掷阶段：装备有此牌的夜兰在场，则我方队伍中每有种元素类型，就使1个元素骰总是投出万能元素。（最多3个）（牌组中包含夜兰，才能加入牌组）\n3\n描述：\n夜兰·猜先有方「点数如何呢？」\n获取方式：\n在猫尾酒馆中邀请夜兰进行对局，完成相应挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%8C%9C%E5%85%88%E6%9C%89%E6%96%B9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f7/g1go3byhbvoj4bg4m9sfc8hd653nmfz.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%8C%9C%E5%85%88%E6%9C%89%E6%96%B9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "魔蝎烈祸",
+        "name": "魔蝎烈祸",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n魔蝎烈祸\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为镀金旅团·炽沙叙事人时，装备此牌。镀金旅团·炽沙叙事人装备此牌后，立刻使用一次厄灵苏醒·炎之魔蝎。装备有此牌的镀金旅团·炽沙叙事人生成的厄灵·炎之魔蝎在镀金旅团·炽沙叙事人使用过「普通攻击」或「元素战技」的回合中，造成的伤害+1；厄灵·炎之魔蝎的减伤效果改为每回合至多2次。（牌组中包含镀金旅团·炽沙叙事人，才能加入牌组）\n3\n2\n描述：\n炽沙叙事人·魔蝎烈祸「为了永恒绿洲！」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度镀金旅团·炽沙叙事人中完成挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%AD%94%E8%9D%8E%E7%83%88%E7%A5%B8",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/8e/sr44h6iry023r1mza18020duw6loahz.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%AD%94%E8%9D%8E%E7%83%88%E7%A5%B8.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "在地为化",
+        "name": "在地为化",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Dendro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n在地为化\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为白术时，装备此牌。白术装备此牌后，立刻使用一次愈气全形论。装备有此牌的白术在场，无郤气护盾触发治疗效果时：生成1个出战角色类型的元素骰。（牌组中包含白术，才能加入牌组）\n4\n2\n描述：\n白术·在地为化「如能应天地通明，以气卫于外，清静治神，自可宝命无碍。」\n获取方式：\n在猫尾酒馆中邀请白术进行对局，完成相应挑战目标后获取。\n实装版本：\n4.2",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%9C%A8%E5%9C%B0%E4%B8%BA%E5%8C%96",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/e8/q8dwwoxcnptkmwgqpfpf3qpwe5f17tp.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%9C%A8%E5%9C%B0%E4%B8%BA%E5%8C%96.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "星天的花雨",
+        "name": "星天的花雨",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n星天的花雨\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为妮露时，装备此牌。妮露装备此牌后，立刻使用一次七域舞步。装备有此牌的妮露在场时：我方丰穰之核造成的伤害+1。（牌组中包含妮露，才能加入牌组）\n3\n描述：\n妮露·星天的花雨宛如七天的流绚，宛如摹录的梦景。\n获取方式：\n在猫尾酒馆中邀请妮露进行对局，完成相应挑战目标后获取。\n实装版本：\n4.2",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%98%9F%E5%A4%A9%E7%9A%84%E8%8A%B1%E9%9B%A8",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/92/p5vvfb3axi8kvw42hb7v84smruyjg07.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%98%9F%E5%A4%A9%E7%9A%84%E8%8A%B1%E9%9B%A8.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "酌盈剂虚",
+        "name": "酌盈剂虚",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n酌盈剂虚\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为多莉时，装备此牌。多莉装备此牌后，立刻使用一次卡萨扎莱宫的无微不至。装备有此牌的多莉所召唤的灯中幽精，对生命值不多于6的角色造成的治疗+1，使没有充能的角色获得充能时获得量+1。（牌组中包含多莉，才能加入牌组）\n3\n2\n描述：\n多莉·酌盈剂虚「先把商品涨价百分之三十，然后再打八折卖出！」\n获取方式：\n在猫尾酒馆中邀请多莉进行对局，完成相应挑战目标后获取。\n实装版本：\n4.2",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%85%8C%E7%9B%88%E5%89%82%E8%99%9A",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/c0/tb2glybbvnvoqndpmk63j6jut0synxm.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%85%8C%E7%9B%88%E5%89%82%E8%99%9A.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "崇诚之真",
+        "name": "崇诚之真",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n崇诚之真\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为迪希雅时，装备此牌。迪希雅装备此牌后，立刻使用一次熔铁流狱。结束阶段：如果装备有此牌的迪希雅生命值不多于6，则治疗该角色2点。（牌组中包含迪希雅，才能加入牌组）\n4\n描述：\n迪希雅·崇诚之真「不用留情，开打吧！」\n获取方式：\n在猫尾酒馆中邀请迪希雅进行对局，完成相应挑战目标后获取。\n实装版本：\n4.1",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%B4%87%E8%AF%9A%E4%B9%8B%E7%9C%9F",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/60/5dqg4u168p5pny0r0gu56hjnbqdpo7h.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%B4%87%E8%AF%9A%E4%B9%8B%E7%9C%9F.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "慈惠仁心",
+        "name": "慈惠仁心",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n慈惠仁心\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为瑶瑶时，装备此牌。瑶瑶装备此牌后，立刻使用一次云台团团降芦菔。装备有此牌的瑶瑶生成的月桂·抛掷型，在可用次数仅剩余最后次时造成的伤害和治疗各+1。（牌组中包含瑶瑶，才能加入牌组）\n3\n描述：\n瑶瑶·慈惠仁心「痛痛飞~」\n获取方式：\n在猫尾酒馆中邀请瑶瑶进行对局，完成相应挑战目标后获取。\n实装版本：\n4.1",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%85%88%E6%83%A0%E4%BB%81%E5%BF%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/65/ortpp2zxsqfxqzd9ut890rx7rhhoslm.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%85%88%E6%83%A0%E4%BB%81%E5%BF%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "梦迹一风",
+        "name": "梦迹一风",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n梦迹一风\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为流浪者时，装备此牌。流浪者装备此牌后，立刻使用一次羽画·风姿华歌。装备有此牌的流浪者在优风倾姿状态下进行重击后：下次从该角色执行「切换角色」行动时少花费1个元素骰，并且造成1点风元素伤害。（牌组中包含流浪者，才能加入牌组）\n4\n描述：\n流浪者·梦迹一风「怒风腾天！」\n获取方式：\n在猫尾酒馆中邀请流浪者进行对局，完成相应挑战目标后获取。\n实装版本：\n4.1",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%A2%A6%E8%BF%B9%E4%B8%80%E9%A3%8E",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/12/o7i0p63im3ipc1vqogwnak63mygf8tk.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%A2%A6%E8%BF%B9%E4%B8%80%E9%A3%8E.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "神性之陨",
+        "name": "神性之陨",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n神性之陨\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为阿贝多时，装备此牌。阿贝多装备此牌后，立刻使用一次创生法·拟造阳华。装备有此牌的阿贝多在场时，如果我方场上存在阳华，则我方角色进行下落攻击时少花费1个无色元素，并且造成的伤害+1。（牌组中包含阿贝多，才能加入牌组）\n3\n描述：\n阿贝多·神性之陨「确认对局策略的过程，也是一种缜密的计算…」\n获取方式：\n在猫尾酒馆中邀请阿贝多进行对局，完成相应挑战目标后获取。\n实装版本：\n4.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A5%9E%E6%80%A7%E4%B9%8B%E9%99%A8",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f4/5hkayuhhwdbslrze2qx0uvbxlrn29jj.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A5%9E%E6%80%A7%E4%B9%8B%E9%99%A8.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "起死回骸",
+        "name": "起死回骸",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Cryo"
+            },
+            {
+                "count": 3,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n起死回骸\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为七七时，装备此牌。七七装备此牌后，立刻使用一次仙法·救苦度厄。装备有此牌的七七使用仙法·救苦度厄时，复苏我方所有倒下的角色，并治疗其2点。(整场牌局限制2次)（牌组中包含七七，才能加入牌组）\n4\n3\n描述：\n七七·起死回骸「要…活下去…」\n获取方式：\n在猫尾酒馆中邀请七七进行对局，完成相应挑战目标后获取。\n实装版本：\n4.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%B5%B7%E6%AD%BB%E5%9B%9E%E9%AA%B8",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/07/2xxupwwsut3owcdj912il1mxk71gq4f.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%B5%B7%E6%AD%BB%E5%9B%9E%E9%AA%B8.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "最终解释权",
+        "name": "最终解释权",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            },
+            {
+                "count": 2,
+                "type": "Unaligned"
+            }
+        ],
+        "description": "装备牌\n最终解释权\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为烟绯时，装备此牌。烟绯装备此牌后，立刻使用一次火漆制印。装备有此牌的烟绯进行重击时：对生命值不多于6的敌人造成的伤害+1；如果触发了丹火印，则在技能结算后抓1张牌。（牌组中包含烟绯，才能加入牌组）\n1\n2\n描述：\n烟绯·最终解释权「在打牌这方面，自然是…律无禁止即可为呀。」\n获取方式：\n在猫尾酒馆中邀请烟绯进行对局，完成相应挑战目标后获取。\n实装版本：\n3.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%9C%80%E7%BB%88%E8%A7%A3%E9%87%8A%E6%9D%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/b4/rq9gy1yknlooz0c40njjyswarvmmb6n.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%9C%80%E7%BB%88%E8%A7%A3%E9%87%8A%E6%9D%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "衍溢的汐潮",
+        "name": "衍溢的汐潮",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n衍溢的汐潮\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为坎蒂丝时，装备此牌。坎蒂丝装备此牌后，立刻使用一次圣仪·灰鸰衒潮。装备有此牌的坎蒂丝生成的赤冕祝祷额外具有以下效果：我方角色普通攻击后：造成1点水元素伤害。（每回合1次）（牌组中包含坎蒂丝，才能加入牌组）\n3\n2\n描述：\n坎蒂丝·衍溢的汐潮在打牌时不遵纪者。是…所有卡牌游戏爱好者的敌人。\n获取方式：\n在猫尾酒馆中邀请坎蒂丝进行对局，完成相应挑战目标后获取。\n实装版本：\n3.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%A1%8D%E6%BA%A2%E7%9A%84%E6%B1%90%E6%BD%AE",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/8d/hattkdcfqbmgk59fy9azvg8fkoff42t.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%A1%8D%E6%BA%A2%E7%9A%84%E6%B1%90%E6%BD%AE.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "风物之诗咏",
+        "name": "风物之诗咏",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n风物之诗咏\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为枫原万叶时，装备此牌。枫原万叶装备此牌后，立刻使用一次千早振。装备有此牌的枫原万叶引发扩散反应后：使我方角色和召唤物接下来2次所造成的的被扩散元素类型的伤害+1。（每种元素类型分别计算次数）（牌组中包含枫原万叶，才能加入牌组）\n3\n描述：\n枫原万叶·风物之诗咏在对局之中，也隐有风雅之礼。至少…对局双方都「落牌无悔」。\n获取方式：\n在猫尾酒馆中邀请枫原万叶进行对局，完成相应挑战目标后获取。\n实装版本：\n3.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%A3%8E%E7%89%A9%E4%B9%8B%E8%AF%97%E5%92%8F",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/10/mn20ub3ao329kgcjtm2x8koi95wvm9e.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%A3%8E%E7%89%A9%E4%B9%8B%E8%AF%97%E5%92%8F.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "一触即发",
+        "name": "一触即发",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n一触即发\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为安柏时，装备此牌。安柏装备此牌后，立刻使用一次爆弹玩偶。安柏普通攻击后：如果此牌和兔兔伯爵仍在场，则引爆兔兔伯爵，造成4点火元素伤害。（牌组中包含安柏，才能加入牌组）\n3\n描述：\n安柏·一触即发「兔兔伯爵，出击！」\n获取方式：\n在猫尾酒馆中邀请安柏进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%B8%80%E8%A7%A6%E5%8D%B3%E5%8F%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/b0/l5z55e7svygk0l46fj4a0mun0uhqf1s.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%B8%80%E8%A7%A6%E5%8D%B3%E5%8F%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "万千的愿望",
+        "name": "万千的愿望",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n万千的愿望\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为雷电将军时，装备此牌。雷电将军装备此牌后，立刻使用一次>奥义·梦想真说。装备有此牌的雷电将军使用奥义·梦想真说时每消耗1点「愿力」，都使造成的伤害额外+1。（牌组中包含雷电将军，才能加入牌组）\n3\n2\n描述：\n雷电将军·万千的愿望恶曜开眼，威光无赦。\n获取方式：\n在猫尾酒馆中邀请雷电将军进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%B8%87%E5%8D%83%E7%9A%84%E6%84%BF%E6%9C%9B",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/7/7a/hxlwbdmjwx9rv69mc0grvfevvok2uqh.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%B8%87%E5%8D%83%E7%9A%84%E6%84%BF%E6%9C%9B.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "冰萤寒光",
+        "name": "冰萤寒光",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n冰萤寒光\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为愚人众·冰萤术士时，装备此牌。愚人众·冰萤术士装备此牌后，立刻使用一次雾虚摇唤。装备有此牌的愚人众·冰萤术士使用技能后：如果冰萤的可用次数被叠加到超过上限，则造成2点冰元素伤害。（牌组中包含愚人众·冰萤术士，才能加入牌组）\n3\n描述：\n冰萤术士·冰萤寒光更多的雾虚草，更多的冰萤朋友。…雾虚草耗尽会如何？或许她并未想过。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度冰萤术士中完成挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%86%B0%E8%90%A4%E5%AF%92%E5%85%89",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/04/pratc9n2c9gb0yz4pzmu0t1xjbbn9bm.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%86%B0%E8%90%A4%E5%AF%92%E5%85%89.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "心识蕴藏之种",
+        "name": "心识蕴藏之种",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n心识蕴藏之种\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为纳西妲时，装备此牌。纳西妲装备此牌后，立刻使用一次心景幻成。装备有此牌的纳西妲在场时，根据我方队伍中存在的元素类型提供效果：火元素：摩耶之殿在场时，自身受到元素反应触发蕴种印的敌方角色，所受蕴种印的穿透伤害改为草元素伤害；雷元素：摩耶之殿入场时，使当前对方场上蕴种印的可用次数+1；水元素：装备有此牌的纳西妲所生成的摩耶之殿初始持续回合+1。（牌组中包含纳西妲，才能加入牌组）\n3\n2\n描述：\n纳西妲·心识蕴藏之种「知识，与你分享。」\n获取方式：\n在猫尾酒馆中邀请纳西妲进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%BF%83%E8%AF%86%E8%95%B4%E8%97%8F%E4%B9%8B%E7%A7%8D",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/18/ttbqu86ugtcpw5c8qo05ypl7y47xxeg.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%BF%83%E8%AF%86%E8%95%B4%E8%97%8F%E4%B9%8B%E7%A7%8D.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "忘玄",
+        "name": "忘玄",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n忘玄\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为申鹤时，装备此牌。申鹤装备此牌后，立刻使用一次仰灵威召将役咒。装备有此牌的申鹤生成的冰翎被我方角色的「普通攻击」触发时：不消耗可用次数。（每回合1次）（牌组中包含申鹤，才能加入牌组）\n3\n描述：\n申鹤·忘玄炼气化神，意生冰身。\n获取方式：\n在猫尾酒馆中邀请申鹤进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%BF%98%E7%8E%84",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/2/21/52eftn8evyt9a1c1w23wfs1yydljgys.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%BF%98%E7%8E%84.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "汲能棱晶",
+        "name": "汲能棱晶",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n汲能棱晶\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为无相之雷时，治疗该角色3点，并附属雷晶核心。（牌组中包含无相之雷，才能加入牌组）\n2\n描述：\n无相之雷·汲能棱晶「好机会！」「嘿，它是我们这边的！」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度无相之雷中完成挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B1%B2%E8%83%BD%E6%A3%B1%E6%99%B6",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/09/0bngu0dismsa7t5vxgb3z0477q1upsw.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B1%B2%E8%83%BD%E6%A3%B1%E6%99%B6.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "深渊之灾·凝水盛放",
+        "name": "深渊之灾·凝水盛放",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n深渊之灾·凝水盛放\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为达达利亚时，装备此牌。达达利亚装备此牌后，立刻使用一次魔王武装·狂澜。结束阶段：对所有附属有断流的敌方角色造成1点穿透伤害。（牌组中包含达达利亚，才能加入牌组）\n4\n描述：\n达达利亚·凝水盛放一次鲁莽但精确的攻击。\n获取方式：\n在猫尾酒馆中邀请达达利亚进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B7%B1%E6%B8%8A%E4%B9%8B%E7%81%BE%C2%B7%E5%87%9D%E6%B0%B4%E7%9B%9B%E6%94%BE",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/82/dqkunudknlo3w3a7j5bh95fhvkz9sm7.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B7%B1%E6%B8%8A%E4%B9%8B%E7%81%BE%C2%B7%E5%87%9D%E6%B0%B4%E7%9B%9B%E6%94%BE.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "炊金馔玉",
+        "name": "炊金馔玉",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 5,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n炊金馔玉\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为钟离时，装备此牌。钟离装备此牌后，立刻使用一次地心·磐礴。装备有此牌的钟离生命值至少为7时，钟离造成的伤害和我方召唤物造成的岩元素伤害+1。（每回合3次）（牌组中包含钟离，才能加入牌组）\n5\n描述：\n钟离·炊金馔玉百川千仞，万古不移。\n获取方式：\n在猫尾酒馆中邀请钟离进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%82%8A%E9%87%91%E9%A6%94%E7%8E%89",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f7/ninb1k36xbt6l4kxz16cwgpwjnibkkv.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%82%8A%E9%87%91%E9%A6%94%E7%8E%89.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "神篱之御荫",
+        "name": "神篱之御荫",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n神篱之御荫\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为八重神子时，装备此牌。八重神子装备此牌后，立刻使用一次大密法·天狐显真。装备有此牌的八重神子通过大密法·天狐显真消灭了杀生樱后，本回合下次使用野干役咒·杀生樱时少花费2个元素骰。（牌组中包含八重神子，才能加入牌组）\n3\n2\n描述：\n八重神子·神篱之御荫「欸…雷光凄美啊…」\n获取方式：\n在猫尾酒馆中邀请八重神子进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A5%9E%E7%AF%B1%E4%B9%8B%E5%BE%A1%E8%8D%AB",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d7/jigvndqaukc7b1iomhhk0ludhjjda9b.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A5%9E%E7%AF%B1%E4%B9%8B%E5%BE%A1%E8%8D%AB.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "绪风之拥",
+        "name": "绪风之拥",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n绪风之拥\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为温迪时，装备此牌。温迪装备此牌后，立刻使用一次高天之歌。装备有此牌的温迪生成的风域触发后，会使本回合中我方角色下次「普通攻击」少花费1个无色元素。（牌组中包含温迪，才能加入牌组）\n3\n描述：\n温迪·绪风之拥「小心脚下。」\n获取方式：\n在猫尾酒馆中邀请温迪进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%BB%AA%E9%A3%8E%E4%B9%8B%E6%8B%A5",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/45/n4tiskk8zpm1jtbvucuyeqv0i3dc9mn.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%BB%AA%E9%A3%8E%E4%B9%8B%E6%8B%A5.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "血之灶火",
+        "name": "血之灶火",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n血之灶火\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为胡桃时，装备此牌。胡桃装备此牌后，立刻使用一次蝶引来生。装备有此牌的胡桃在生命值不多于6时，造成的火元素伤害+1。（牌组中包含胡桃，才能加入牌组）\n2\n描述：\n胡桃·血之灶火在处理一些特定事物时，胡堂主所需要的火力还得再大些。\n获取方式：\n在猫尾酒馆中邀请胡桃进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%A1%80%E4%B9%8B%E7%81%B6%E7%81%AB",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/34/imx3qd3ycfj8y8gklamg066qabzv7lq.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%A1%80%E4%B9%8B%E7%81%B6%E7%81%AB.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "降魔·护法夜叉",
+        "name": "降魔·护法夜叉",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n降魔·护法夜叉\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为魈时，装备此牌。魈装备此牌后，立刻使用一次靖妖傩舞。装备有此牌的魈附属夜叉傩面期间，使用风轮两立时少花费1个风元素。（每附属1次夜叉傩面，可触发2次）（牌组中包含魈，才能加入牌组）\n3\n2\n描述：\n魈·降魔诸邪退散，万恶皆除。\n获取方式：\n在猫尾酒馆中邀请魈进行对局，完成相应挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%99%8D%E9%AD%94%C2%B7%E6%8A%A4%E6%B3%95%E5%A4%9C%E5%8F%89",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/e9/ff9lytyrix59kefi5in7u9k7bbt79eb.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%99%8D%E9%AD%94%C2%B7%E6%8A%A4%E6%B3%95%E5%A4%9C%E5%8F%89.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "眼识殊明",
+        "name": "眼识殊明",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n眼识殊明\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为提纳里时，装备此牌。提纳里装备此牌后，立即使用一次识果种雷。装备有此牌的提纳里在附属通塞识状态期间，进行重击时少花费1个无色元素。（牌组中包含提纳里，才能加入牌组）\n4\n描述：\n提纳里·眼识殊明犯错也是学习过程中的一环…但前提是，这些错误被发现且改正。\n获取方式：\n在猫尾酒馆中邀请提纳里进行对局，完成相应挑战目标后获取。\n实装版本：\n3.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%9C%BC%E8%AF%86%E6%AE%8A%E6%98%8E",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/de/49vcxjhbrell2epfz01qwfiir8m72wm.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%9C%BC%E8%AF%86%E6%AE%8A%E6%98%8E.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "荒泷第一",
+        "name": "荒泷第一",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Geo"
+            },
+            {
+                "count": 2,
+                "type": "Unaligned"
+            }
+        ],
+        "description": "装备牌\n荒泷第一\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为荒泷一斗时，装备此牌。荒泷一斗装备此牌后，立刻使用一次喧哗屋传说。装备有此牌的荒泷一斗每回合及以后使用喧哗屋传说时：如果触发乱神之怪力，伤害额外+1。（牌组中包含荒泷一斗，才能加入牌组）\n1\n2\n描述：\n荒泷一斗·荒泷第一无论如何，先在气势方面占据上风总没错。\n获取方式：\n在猫尾酒馆中邀请荒泷一斗进行对局，完成相应挑战目标后获取。\n实装版本：\n3.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%8D%92%E6%B3%B7%E7%AC%AC%E4%B8%80",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/8f/thezdhr7e8galk0yazfaxhdh5wdfvrg.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%8D%92%E6%B3%B7%E7%AC%AC%E4%B8%80.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "镜华风姿",
+        "name": "镜华风姿",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n镜华风姿\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为神里绫人时，装备此牌。神里绫人装备此牌后，立刻使用一次神里流·镜花。\n附属有泷廻鉴花的神里绫人「普通攻击」后：所附属角色本回合中下次「普通攻击」少花费2个无色元素。（该次普通攻击不会重复触发此卡牌的效果）（牌组中包含神里绫人，才能加入牌组）\n3\n描述：\n神里绫人·镜华风姿在庭之椿，寒中清芬。\n获取方式：\n在猫尾酒馆中邀请神里绫人进行对局，完成相应挑战目标后获取。\n实装版本：\n3.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%95%9C%E5%8D%8E%E9%A3%8E%E5%A7%BF",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/bd/pjeiagwkmc8d5hpsvipqdq2a1fm3cz9.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%95%9C%E5%8D%8E%E9%A3%8E%E5%A7%BF.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "匣中玉栉",
+        "name": "匣中玉栉",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n匣中玉栉\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为珊瑚宫心海时，装备此牌。珊瑚宫心海装备此牌后，立刻使用一次海人化羽。装备有此牌的珊瑚宫心海使用海人化羽时：召唤一个可用次数为1的化海月，如果化海月已在场，则改为可用次数+1。仪来羽衣存在期间，化海月造成的伤害+1。（牌组中包含珊瑚宫心海，才能加入牌组）\n3\n2\n描述：\n珊瑚宫心海·匣中玉栉匣中有智，潮起沧海。\n获取方式：\n在猫尾酒馆中邀请珊瑚宫心海进行对局，完成相应挑战目标后获取。\n实装版本：\n3.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%8C%A3%E4%B8%AD%E7%8E%89%E6%A0%89",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/07/kmmxc1ip57k82oowlgsknqzzqpniud7.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%8C%A3%E4%B8%AD%E7%8E%89%E6%A0%89.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "我界",
+        "name": "我界",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n我界\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为九条裟罗时，装备此牌。九条裟罗装备此牌后，立刻使用一次鸦羽天狗霆雷召咒。装备有此牌的九条裟罗在场时， 我方附属有鸣煌护持的雷元素角色，元素战技和元素爆发造成的伤害额外+1.（牌组中包含九条裟罗，才能加入牌组）\n3\n描述：\n九条裟罗·我界「持心正弦，遇敌必除！」\n获取方式：\n在猫尾酒馆中邀请九条裟罗进行对局，完成相应挑战目标后获取。\n实装版本：\n3.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%88%91%E7%95%8C",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/30/40zo73vru6l5f32g2vw7ddw90dvpup0.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%88%91%E7%95%8C.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "战欲涌现",
+        "name": "战欲涌现",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n战欲涌现\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为优菈时，装备此牌。优菈装备此牌后，立刻使用一次凝浪之光剑。装备有此牌的优菈使用冰潮的涡旋时，会额外为光降之剑累积1点「能量层数」。\n（牌组中包含优菈，才能加入牌组）\n3\n2\n描述：\n优菈·战欲涌现冰浪怒涛，断绝深仇。\n获取方式：\n在猫尾酒馆中邀请优菈进行对局，完成相应挑战目标后获取。\n实装版本：\n3.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%88%98%E6%AC%B2%E6%B6%8C%E7%8E%B0",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/b5/7r8u2rbqwmckubiypt2b2uq0kvu7wk7.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%88%98%E6%AC%B2%E6%B6%8C%E7%8E%B0.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "砰砰礼物",
+        "name": "砰砰礼物",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n砰砰礼物\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为可莉时，装备此牌。可莉装备此牌后，立刻使用一次蹦蹦炸弹。装备有此牌的可莉生成的爆裂火花的可用次数+1。（牌组中包含可莉，才能加入牌组）\n3\n描述：\n可莉·砰砰礼物抽到这张牌时，发出一阵欢乐的大笑吧。\n获取方式：\n在猫尾酒馆中邀请可莉进行对局，完成相应挑战目标后获取。\n实装版本：\n3.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%A0%B0%E7%A0%B0%E7%A4%BC%E7%89%A9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/af/hscuxac2dtmjzesh3hv0897zx8y7jvw.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%A0%B0%E7%A0%B0%E7%A4%BC%E7%89%A9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "霹雳连霄",
+        "name": "霹雳连霄",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n霹雳连霄\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为北斗时，装备此牌。北斗装备此牌后，立刻使用一次捉浪。装备有此牌的北斗使用踏潮时：使北斗本回合内「普通攻击」少花费1个无色元素。（最多触发2次）（牌组中包含北斗，才能加入牌组）\n3\n描述：\n北斗·霹雳连霄电光石火，霹雳连霄。\n获取方式：\n在猫尾酒馆中邀请北斗进行对局，完成相应挑战目标后获取。\n实装版本：\n3.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%9C%B9%E9%9B%B3%E8%BF%9E%E9%9C%84",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/6b/41tgx26eztza8ewewd4e00h2yuhfq6x.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%9C%B9%E9%9B%B3%E8%BF%9E%E9%9C%84.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "交叉火力",
+        "name": "交叉火力",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n交叉火力\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为香菱时，装备此牌。香菱装备此牌后，立刻使用一次锅巴出击。装备有此牌的香菱施放锅巴出击时，自身也会造成1点火元素伤害。（牌组中包含香菱，才能加入牌组）\n3\n描述：\n香菱·交叉火力在厨房里，这只是一种常规火力。\n获取方式：\n在猫尾酒馆中邀请香菱进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BA%A4%E5%8F%89%E7%81%AB%E5%8A%9B",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/5/5c/97jpj52jfngqs6watfwo1yqz66p6tc0.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BA%A4%E5%8F%89%E7%81%AB%E5%8A%9B.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "储之千日，用之一刻",
+        "name": "储之千日，用之一刻",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n储之千日，用之一刻\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为凝光时，装备此牌。凝光装备此牌后，立刻使用一次璇玑屏。装备有此牌的凝光在场时，璇玑屏会使我方造成的岩元素伤害+1。（牌组中包含凝光，才能加入牌组）\n3\n描述：\n凝光·储之千日，用之一刻余裕，是自信的代名词。\n获取方式：\n在猫尾酒馆中邀请凝光进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%82%A8%E4%B9%8B%E5%8D%83%E6%97%A5%EF%BC%8C%E7%94%A8%E4%B9%8B%E4%B8%80%E5%88%BB",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/bc/96vnqq52iqk6945b7pf3d2357twfbfd.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%82%A8%E4%B9%8B%E5%8D%83%E6%97%A5%EF%BC%8C%E7%94%A8%E4%B9%8B%E4%B8%80%E5%88%BB.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "光辉的季节",
+        "name": "光辉的季节",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n光辉的季节\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为芭芭拉时，装备此牌。芭芭拉装备此牌后，立刻使用一次演唱，开始♪。装备有此牌的芭芭拉在场时，歌声之环会使我方执行「切换角色」行动时少花费1个元素骰。（每回合1次）（牌组中包含芭芭拉，才能加入牌组）\n3\n描述：\n芭芭拉·光辉的季节将我的歌声与祝福献给你。\n获取方式：\n在猫尾酒馆中邀请芭芭拉进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%85%89%E8%BE%89%E7%9A%84%E5%AD%A3%E8%8A%82",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/0c/f0gcvzqgtn3lo9xdmlprbh2yhx9n7mz.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%85%89%E8%BE%89%E7%9A%84%E5%AD%A3%E8%8A%82.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "冒险憧憬",
+        "name": "冒险憧憬",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Pyro"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n冒险憧憬\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为班尼特时，装备此牌。班尼特装备此牌后，立刻使用一次美妙旅程。装备有此牌的班尼特生成的鼓舞领域，其伤害提升效果改为总是生效，不再具有生命值限制。（牌组中包含班尼特，才能加入牌组）\n4\n2\n描述：\n班尼特·冒险憧憬最美妙的冒险永远是下一次。\n获取方式：\n在猫尾酒馆中邀请班尼特进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%86%92%E9%99%A9%E6%86%A7%E6%86%AC",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/89/f7c5clwn0latg81fu44x0pvjzssvnx8.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%86%92%E9%99%A9%E6%86%A7%E6%86%AC.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "冷血之剑",
+        "name": "冷血之剑",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n冷血之剑\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为凯亚时，装备此牌。凯亚装备此牌后，立刻使用一次霜袭。装备有此牌的凯亚使用霜袭后：治疗自身2点。（每回合1次）（牌组中包含凯亚，才能加入牌组）\n3\n描述：\n凯亚·冷血之剑略显冷酷的玩笑。\n获取方式：\n在猫尾酒馆中邀请凯亚进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%86%B7%E8%A1%80%E4%B9%8B%E5%89%91",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/a/a1/of991wwfemibnfnevn9h0ucpr563quu.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%86%B7%E8%A1%80%E4%B9%8B%E5%89%91.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "吐纳真定",
+        "name": "吐纳真定",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n吐纳真定\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为重云时，装备此牌。重云装备此牌后，立刻使用一次重华叠霜。装备有此牌的重云生成的重华叠霜领域获得以下效果：我方单手剑、双手剑或长柄武器角色的普通攻击伤害+1。（牌组中包含重云，才能加入牌组）\n3\n描述：\n重云·吐纳真定吐纳霜华，心神真定。\n获取方式：\n在猫尾酒馆中邀请重云进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%90%90%E7%BA%B3%E7%9C%9F%E5%AE%9A",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/e6/qfsltpvntkjxioew81iehfhy5xvl7v6.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%90%90%E7%BA%B3%E7%9C%9F%E5%AE%9A.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "唯此一心",
+        "name": "唯此一心",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 5,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n唯此一心\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为甘雨时，装备此牌。甘雨装备此牌后，立刻使用一次霜华矢。装备有此牌的甘雨使用霜华矢时：如果此技能在本场对局中曾经被使用过，则对敌方后台角色造成3点穿透伤害。（牌组中包含甘雨，才能加入牌组）\n5\n描述：\n甘雨·唯此一心先矢夺人，好箭成霜。\n获取方式：\n在猫尾酒馆中邀请甘雨进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%94%AF%E6%AD%A4%E4%B8%80%E5%BF%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/7/7d/kkz3mpx8guhl3ebcty6fimd6rsurap6.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%94%AF%E6%AD%A4%E4%B8%80%E5%BF%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "噬星魔鸦",
+        "name": "噬星魔鸦",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n噬星魔鸦\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为菲谢尔时，装备此牌。菲谢尔装备此牌后，立刻使用一次夜巡影翼。装备有此牌的菲谢尔生成的奥兹，会在菲谢尔普通攻击后造成2点雷元素伤害。（需消耗可用次数）（牌组中包含菲谢尔，才能加入牌组）\n3\n描述：\n菲谢尔·噬星魔鸦「奥兹华尔多·赫芙那梵茵斯展现权能的一瞬。」\n获取方式：\n在猫尾酒馆中邀请菲谢尔进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%99%AC%E6%98%9F%E9%AD%94%E9%B8%A6",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/b3/6itad1u42av63usprwev4dgewb4cmfs.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%99%AC%E6%98%9F%E9%AD%94%E9%B8%A6.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "孢子增殖",
+        "name": "孢子增殖",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n孢子增殖\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为翠翎恐蕈时，装备此牌。翠翎恐蕈装备此牌后，立刻使用一次不稳定孢子云。装备有此牌的翠翎恐蕈，可累积的「活化激能」层数+1。（牌组中包含翠翎恐蕈，才能加入牌组）\n3\n描述：\n粉尘孢子云那是智慧远超一般生物的蕈兽之王布设的陷阱，鲜少有人能安然无恙地通过。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度翠翎恐蕈中完成挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%AD%A2%E5%AD%90%E5%A2%9E%E6%AE%96",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/41/bj27pgk1uzd78oc9twitrw7aj1fzatb.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%AD%A2%E5%AD%90%E5%A2%9E%E6%AE%96.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "悉数讨回",
+        "name": "悉数讨回",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n悉数讨回\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为愚人众·火之债务处理人时，装备此牌。愚人众·火之债务处理人装备此牌后，立刻使用一次伺机而动。装备有此牌的愚人众·火之债务处理人生成的潜行获得以下效果：初始可用次数+1，并且使所附属角色造成的物理伤害变为火元素伤害。（牌组中包含愚人众·火之债务处理人，才能加入牌组）\n3\n描述：\n隐秘回收那是你要记得一生的事：你知道你亏欠了谁，你知道自己应在何时奉还。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度火之债务处理人中完成挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%82%89%E6%95%B0%E8%AE%A8%E5%9B%9E",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/4b/p2lmo1107n5nwc2pulpjkurlixa2o4h.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%82%89%E6%95%B0%E8%AE%A8%E5%9B%9E.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "抵天雷罚",
+        "name": "抵天雷罚",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n抵天雷罚\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为刻晴时，装备此牌。刻晴装备此牌后，立刻使用一次星斗归位。装备有此牌的刻晴生成的雷元素附魔获得以下效果：初始持续回合+1，并且会使所附属角色造成的雷元素伤害+1。（牌组中包含刻晴，才能加入牌组）\n3\n描述：\n刻晴·抵天雷罚只要你没有真正作弊，这就只是一张卡牌而已。\n获取方式：\n在猫尾酒馆中邀请刻晴进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%8A%B5%E5%A4%A9%E9%9B%B7%E7%BD%9A",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/8f/tcfkfyh5zqcpkc8s00p5r5z55p4xg11.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%8A%B5%E5%A4%A9%E9%9B%B7%E7%BD%9A.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "支援就交给我吧",
+        "name": "支援就交给我吧",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n支援就交给我吧\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为诺艾尔时，装备此牌。诺艾尔装备此牌后，立刻使用一次护心铠。诺艾尔普通攻击后：如果此牌和护体岩铠仍在场，则治疗我方所有角色1点。（每回合1次）（牌组中包含诺艾尔，才能加入牌组）\n3\n描述：\n诺艾尔·支援就交给我吧坚毅之心，才是最牢固的岩铠。\n获取方式：\n在猫尾酒馆中邀请诺艾尔进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%94%AF%E6%8F%B4%E5%B0%B1%E4%BA%A4%E7%BB%99%E6%88%91%E5%90%A7",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/eb/2tvzk9pa4ii3nl61fxdc55pga52l4s2.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%94%AF%E6%8F%B4%E5%B0%B1%E4%BA%A4%E7%BB%99%E6%88%91%E5%90%A7.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "机巧神通",
+        "name": "机巧神通",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n机巧神通\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为魔偶剑鬼时，装备此牌。魔偶剑鬼装备此牌后，立刻使用一次孤风刀势。装备有此牌的魔偶剑鬼施放孤风刀势后，我方切换到后一个角色；施放霜驰影突后，我方切换到前一个角色。（牌组中包含魔偶剑鬼，才能加入牌组）\n3\n描述：\n剑豪人形毫厘不差的斩击，或已斩出千万次。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度魔偶剑鬼中完成挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%9C%BA%E5%B7%A7%E7%A5%9E%E9%80%9A",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/ca/oiysobdg2mj2zqtnw2ab2kfmpnt7rif.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%9C%BA%E5%B7%A7%E7%A5%9E%E9%80%9A.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "沉没的预言",
+        "name": "沉没的预言",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            },
+            {
+                "count": 3,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n沉没的预言\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为莫娜时，装备此牌。莫娜装备此牌后，立刻使用一次星命定轨。装备有此牌的莫娜出战期间，我方引发的水元素相关反应伤害额外+2。（牌组中包含莫娜，才能加入牌组）\n3\n3\n描述：\n莫娜·沉没的预言「嗨！应该出那一张！」「好吧，你就是不听我的。」\n获取方式：\n在猫尾酒馆中邀请莫娜进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B2%89%E6%B2%A1%E7%9A%84%E9%A2%84%E8%A8%80",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/de/1o1lt07ey988flsh538t7ywvnpzvzjk.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B2%89%E6%B2%A1%E7%9A%84%E9%A2%84%E8%A8%80.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "流火焦灼",
+        "name": "流火焦灼",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n流火焦灼\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为迪卢克时，装备此牌。迪卢克装备此牌后，立刻使用一次逆焰之刃。装备有此牌的迪卢克每回合第2次与第3次使用逆焰之刃时，少花费1个火元素。（牌组中包含迪卢克，才能加入牌组）\n3\n描述：\n迪卢克·流火焦灼解决焦灼情况的一种简单手段。\n获取方式：\n在猫尾酒馆中邀请迪卢克进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B5%81%E7%81%AB%E7%84%A6%E7%81%BC",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/45/5vmeg0n5i55u7yy9ly1vb652iv7q6wg.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B5%81%E7%81%AB%E7%84%A6%E7%81%BC.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "混元熵增论",
+        "name": "混元熵增论",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Anemo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n混元熵增论\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为砂糖时，装备此牌。砂糖装备此牌后，立刻使用一次禁·风灵作成·柒伍同构贰型。装备有此牌的砂糖生成的大型风灵已转换成另一种元素后：我方造成的此类元素伤害+1。（牌组中包含砂糖，才能加入牌组）\n3\n2\n描述：\n砂糖·混元熵增论狂风骤降，乱中取胜。\n获取方式：\n在猫尾酒馆中邀请砂糖进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B7%B7%E5%85%83%E7%86%B5%E5%A2%9E%E8%AE%BA",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/90/eeqbqpe834asxqkxeteybhox778o9cr.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B7%B7%E5%85%83%E7%86%B5%E5%A2%9E%E8%AE%BA.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "猫爪冰摇",
+        "name": "猫爪冰摇",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n猫爪冰摇\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为迪奥娜时，装备此牌。迪奥娜装备此牌后，立刻使用一次猫爪冻冻。装备有此牌的迪奥娜生成的猫爪护盾，所提供的护盾值+1。（牌组中包含迪奥娜，才能加入牌组）\n4\n描述：\n迪奥娜·猫爪冰摇摇晃摇晃，混合均匀。您要的续杯！\n获取方式：\n在猫尾酒馆中邀请迪奥娜进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%8C%AB%E7%88%AA%E5%86%B0%E6%91%87",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/4f/5tr0756qvsnznb8e3jo6uixjji4piw3.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%8C%AB%E7%88%AA%E5%86%B0%E6%91%87.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "百川奔流",
+        "name": "百川奔流",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Hydro"
+            },
+            {
+                "count": 3,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n百川奔流\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为纯水精灵·洛蒂娅时，装备此牌。纯水精灵·洛蒂娅装备此牌后，立刻使用一次潮涌与激流。装备有此牌的纯水精灵·洛蒂娅施放潮涌与激流时，使我方所有召唤物可用次数+1。（牌组中包含纯水精灵·洛蒂娅，才能加入牌组）\n4\n3\n描述：\n如流悬泄奔涌之水，是对已殁神灵敬爱的显现。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度纯水精灵·洛蒂娅中完成挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%99%BE%E5%B7%9D%E5%A5%94%E6%B5%81",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/31/nljvib2ulsicm2n9fn6nzaatfu048cz.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%99%BE%E5%B7%9D%E5%A5%94%E6%B5%81.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "落羽的裁择",
+        "name": "落羽的裁择",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n落羽的裁择\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为赛诺时，装备此牌。赛诺装备此牌后，立刻使用一次秘仪·律渊渡魂。装备有此牌的赛诺在启途誓使的「凭依」级数至少为2时，使用秘仪·律渊渡魂造成的伤害+1。（每回合至多2次）（牌组中包含赛诺，才能加入牌组）\n3\n描述：\n赛诺·落羽的抉择「这便是我的决斗之魂。」\n获取方式：\n在猫尾酒馆中邀请赛诺进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%90%BD%E7%BE%BD%E7%9A%84%E8%A3%81%E6%8B%A9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/7/76/tktyg8ql89s6pnqst1knyye99i4aq3s.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%90%BD%E7%BE%BD%E7%9A%84%E8%A3%81%E6%8B%A9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "蒲公英的国土",
+        "name": "蒲公英的国土",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Anemo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n蒲公英的国土\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为琴时，装备此牌。琴装备此牌后，立刻使用一次蒲公英之风。装备有此牌的琴在场时，蒲公英领域会使我方造成的风元素伤害+1。（牌组中包含琴，才能加入牌组）\n4\n2\n描述：\n琴·蒲公英的国土「风啊，回应我吧！」\n获取方式：\n在猫尾酒馆中邀请琴进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%92%B2%E5%85%AC%E8%8B%B1%E7%9A%84%E5%9B%BD%E5%9C%9F",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/de/of7ceym8j6e9yj4pp6kbpm5uogm9ieh.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%92%B2%E5%85%AC%E8%8B%B1%E7%9A%84%E5%9B%BD%E5%9C%9F.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "觉醒",
+        "name": "觉醒",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n觉醒\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为雷泽时，装备此牌。雷泽装备此牌后，立刻使用一次利爪与苍雷。装备有此牌的雷泽使用利爪与苍雷后：使我方一个雷元素角色获得1点充能。（每回合1次，出战角色优先）（牌组中包含雷泽，才能加入牌组）\n3\n描述：\n雷泽·觉醒追猎，即将开始。\n获取方式：\n在猫尾酒馆中邀请雷泽进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%A7%89%E9%86%92",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/2/2d/812kp51tctrad3yl4qdjikpt06sg01m.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%A7%89%E9%86%92.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "重帘留香",
+        "name": "重帘留香",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n重帘留香\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为行秋时，装备此牌。行秋装备此牌后，立刻使用一次画雨笼山。装备有此牌的行秋生成的雨帘剑，初始可用次数+1，雨帘剑会在我方出战角色受到至少为2的伤害时抵消伤害。（牌组中包含行秋，才能加入牌组）\n3\n描述：\n行秋·重帘留香他的运笔方法一直让人印象深刻。\n获取方式：\n在猫尾酒馆中邀请行秋进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%87%8D%E5%B8%98%E7%95%99%E9%A6%99",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/d8/psa1mm61llx36czshfzfkblsuz2vutq.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%87%8D%E5%B8%98%E7%95%99%E9%A6%99.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "重铸：岩盔",
+        "name": "重铸：岩盔",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 4,
+                "type": "Geo"
+            },
+            {
+                "count": 2,
+                "type": "Omni"
+            }
+        ],
+        "description": "装备牌\n重铸：岩盔\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为丘丘岩盔王时，装备此牌。丘丘岩盔王装备此牌后，立刻使用一次Upa Shato。装备有此牌的丘丘岩盔王击倒敌方角色后：丘丘岩盔王重新附属岩盔和坚岩之力。（牌组中包含丘丘岩盔王，才能加入牌组）\n4\n2\n描述：\n刚躯岩铸似磐岩中生长而出的躯体，坚固之力在其身躯中流转。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度丘丘岩盔王中完成挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%87%8D%E9%93%B8%EF%BC%9A%E5%B2%A9%E7%9B%94",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/9f/ijpaagvk7o9jh1pzb933vl9l2l4islk.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%87%8D%E9%93%B8%EF%BC%9A%E5%B2%A9%E7%9B%94.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "镜锢之笼",
+        "name": "镜锢之笼",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n镜锢之笼\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为愚人众·藏镜仕女时，装备此牌。愚人众·藏镜仕女装备此牌后，立刻使用一次潋波绽破。装备有此牌的愚人众·藏镜仕女生成的水光破镜初始持续回合+1，并且会使所附属角色受到的水元素伤害+1。（牌组中包含愚人众·藏镜仕女，才能加入牌组）\n3\n描述：\n藏于镜中之秘「镜子啊，镜子啊，请你倒映…我的敌人，现在哪里？」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度藏镜仕女中完成挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%95%9C%E9%94%A2%E4%B9%8B%E7%AC%BC",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/66/94j2sh625owvld4y96ovbhspqxri03r.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%95%9C%E9%94%A2%E4%B9%8B%E7%AC%BC.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "长野原龙势流星群",
+        "name": "长野原龙势流星群",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n长野原龙势流星群\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为宵宫时，装备此牌。宵宫装备此牌后，立刻使用一次焰硝庭火舞。装备有此牌的宵宫所生成的庭火焰硝触发后额外造成1点火元素伤害。（牌组中包含宵宫，才能加入牌组）\n1\n描述：\n宵宫·长野原龙势流星群长野原·优势烟花储量学说。\n获取方式：\n在猫尾酒馆中邀请宵宫进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%95%BF%E9%87%8E%E5%8E%9F%E9%BE%99%E5%8A%BF%E6%B5%81%E6%98%9F%E7%BE%A4",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/bc/6jqai6u5s94sziug29b3b374lmvh0jv.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%95%BF%E9%87%8E%E5%8E%9F%E9%BE%99%E5%8A%BF%E6%B5%81%E6%98%9F%E7%BE%A4.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "飞叶迴斜",
+        "name": "飞叶迴斜",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n飞叶迴斜\n行动牌\n天赋  战斗行动\n战斗行动：我方出战角色为柯莱时，装备此牌。柯莱装备此牌后，立刻使用一次拂花偈叶。装备有此牌的柯莱使用了拂花偈叶的回合中，我方角色的技能引发草元素相关反应后：造成1点草元素伤害。（每回合1次）（牌组中包含柯莱，才能加入牌组）\n3\n描述：\n柯莱·飞叶迴斜不要小看柯莱，更不要小看猫猫。\n获取方式：\n在猫尾酒馆中邀请柯莱进行对局，完成相应挑战目标后获取。\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%A3%9E%E5%8F%B6%E8%BF%B4%E6%96%9C",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/01/6f79lc4y34av8nsfwxiwtbir2g9b93e.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%A3%9E%E5%8F%B6%E8%BF%B4%E6%96%9C.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "若水",
+        "name": "若水",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n若水\n行动牌\n武器  弓\n所附属角色生命值至少为11时：造成的伤害+2。入场时：所附属角色获得1点最大生命值。（「弓」角色才能装备。角色最多装备1件「武器」）\n2\n描述：\n无常之智·若水「为了保护源头的纯净，水的温柔意志亦当化作利刃，成为良弓。淡蓝满月之下，阴谋与密语交织之中游刃有余，是为水形之智。」\n获取方式：\n卡牌商店购买获得\n实装版本：\n月之一",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%8B%A5%E6%B0%B4",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/5/59/knmu99lnyx09semx4irfmnmhakwukow.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%8B%A5%E6%B0%B4.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "竭泽",
+        "name": "竭泽",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n竭泽\n行动牌\n武器  弓\n我方打出名称不存在于初始牌组中的行动牌后：此牌累积1点「渔猎」。（最多累积 2点，每回合最多累积2点）角色使用技能时：如果此牌已有「渔猎」，则消耗所有「渔猎」，使此技能伤害+1，并且每消耗1点「渔猎」就抓1张牌。（「弓」角色才能装备。角色最多装备1件「武器」）\n2\n描述：\n网破·竭泽「…原本在高原上巨大的湖泊中如箭头一般笔直射穿空间的鱼，它曾如长枪一般笔直，循着圣迹沿洄，溪流渐渐渗入沙中，湖泽退缩成水洼，最终只得在水洼中蜷曲身体，结果成为了朝圣之人的猎获。」\n获取方式：\n卡牌商店购买获得\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%AB%AD%E6%B3%BD",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/15/f929irdph6iw22whobwwnoutqzex89v.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%AB%AD%E6%B3%BD.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "王下近侍",
+        "name": "王下近侍",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n王下近侍\n行动牌\n武器  弓\n角色造成的伤害+1。入场时：所附属角色在本回合中，下次使用「元素战技」或装备「天赋」时少花费2个元素骰。（「弓」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n森林教诲·王下近侍从兰那罗的故事中得到的武器，具有弓的形制。「记住，这个世界只是森林的梦…请将森林的语言、保护王土的责任传给更多人。」\n获取方式：\n卡牌商店购买获得\n实装版本：\n4.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%8E%8B%E4%B8%8B%E8%BF%91%E4%BE%8D",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/b/b0/8bzydnzutyrsgzm1ad9hz3cpyv8g0uq.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%8E%8B%E4%B8%8B%E8%BF%91%E4%BE%8D.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "终末嗟叹之诗",
+        "name": "终末嗟叹之诗",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n终末嗟叹之诗\n行动牌\n武器  弓\n角色造成的伤害+1。角色使用「元素爆发」后：生成「干年的大乐章·别离之歌」。（我方角色造成的伤害+1，持续回合：2）（「弓」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n思念之歌·终末嗟叹之诗「…但无论怎样的风」「也不能再为我带来你的注视了…」\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%BB%88%E6%9C%AB%E5%97%9F%E5%8F%B9%E4%B9%8B%E8%AF%97",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/c7/946cwro3dzjq0e6t5e3hiyxhgh1quqp.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%BB%88%E6%9C%AB%E5%97%9F%E5%8F%B9%E4%B9%8B%E8%AF%97.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "阿莫斯之弓",
+        "name": "阿莫斯之弓",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n阿莫斯之弓\n行动牌\n武器  弓\n角色造成的伤害+1。角色使用原本元素骰费用+充能费用至少为5的技能时，伤害额外+2。（每回合1次）（「弓」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n矢志不忘·阿莫斯之弓「我梦见海浪与细沙，我梦见青翠的森林与大地」「我梦见野猪在浆果丛嬉戏，我梦见高耸的尖塔」\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%98%BF%E8%8E%AB%E6%96%AF%E4%B9%8B%E5%BC%93",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/e9/pb37cze3ngslubsou1iatkyrgymokzp.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%98%BF%E8%8E%AB%E6%96%AF%E4%B9%8B%E5%BC%93.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "天空之翼",
+        "name": "天空之翼",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n天空之翼\n行动牌\n武器  弓\n角色造成的伤害+1。每回合1次：角色使用「普通攻击」造成的伤害额外+1。（「弓」角色才能装备。角色最多装备1件「武器」）\n3\n描述：\n回响长诗·天空之翼通透高天之琴，释弦时的鸣声是风之神的偏爱。\n获取方式：\n卡牌商店购买获得\n实装版本：\n3.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A4%A9%E7%A9%BA%E4%B9%8B%E7%BF%BC",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/8/8e/40yfyoifbe5xx34wsunc0an6pl7w6ru.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A4%A9%E7%A9%BA%E4%B9%8B%E7%BF%BC.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "亡水溢流",
+        "name": "亡水溢流",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n亡水溢流\n行动牌\n天赋\n快速行动：装备给我方的圣骸角鳄。入场时：生成手牌噬骸能量块。装备有此牌的圣骸角鳄在场时，我方使用噬骸能量块后，治疗我方受伤最多的角色1点。（牌组中包含圣骸角鳄，才能加入牌组）\n1\n描述：\n圣骸角鳄·亡水溢流「吞噬、融合，再搜索下一个不朽的亡骸——圣骸兽们不断重复着这一进化的循环。然而它们并不知晓，这一循环似乎并无尽头…」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度圣骸角鳄中完成挑战目标后获取。\n实装版本：\n月之四",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BA%A1%E6%B0%B4%E6%BA%A2%E6%B5%81",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/62/ntfytrs52fz7r9nk3pxnd1vzqtdbf0k.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BA%A1%E6%B0%B4%E6%BA%A2%E6%B5%81.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "林雾间的行迹",
+        "name": "林雾间的行迹",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n林雾间的行迹\n行动牌\n天赋\n快速行动：装备给我方的欧洛伦。我方每回合首次引发的感电反应造成的穿透伤害+1。（牌组中包含欧洛伦，才能加入牌组）\n1\n描述：\n欧洛伦·林雾间的行迹「去吧，你自由了。」\n获取方式：\n在猫尾酒馆中邀请欧洛伦进行对局，完成相应挑战目标后获取。\n实装版本：\n月之四",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%9E%97%E9%9B%BE%E9%97%B4%E7%9A%84%E8%A1%8C%E8%BF%B9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/fd/cv6rvlgv8r2oy38jn8ietq46pp78q1s.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%9E%97%E9%9B%BE%E9%97%B4%E7%9A%84%E8%A1%8C%E8%BF%B9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "湮远",
+        "name": "湮远",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n湮远\n行动牌\n天赋\n快速行动：装备给我方的丝柯克。装备有此牌的丝柯克在场，我方打出或舍弃虚境裂隙时：对敌方出战角色造成1点冰元素伤害。（每回合1次）（牌组中包含丝柯克，才能加入牌组）\n1\n描述：\n丝柯克·湮远「群星寂灭。」\n获取方式：\n在猫尾酒馆中邀请丝柯克进行对局，完成相应挑战目标后获取。\n实装版本：\n月之四",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B9%AE%E8%BF%9C",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/d/de/k6vkjh69xz6lpxhjvd5dibxgc0z31b9.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B9%AE%E8%BF%9C.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "正义英雄的凯旋",
+        "name": "正义英雄的凯旋",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n正义英雄的凯旋\n行动牌\n天赋\n快速行动：装备给我方的瓦雷莎。瓦雷莎触发连势，三重腾跃！后：获得1点充能。装备有此牌的瓦雷莎的「元素爆发」造成的伤害+1。（牌组中包含瓦雷莎，才能加入牌组）\n1\n描述：\n瓦雷莎·正义英雄的凯旋「绝技！英雄飞踢！」\n获取方式：\n在猫尾酒馆中邀请瓦雷莎进行对局，完成相应挑战目标后获取。\n实装版本：\n月之二",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%AD%A3%E4%B9%89%E8%8B%B1%E9%9B%84%E7%9A%84%E5%87%AF%E6%97%8B",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/44/s9lp12clrxpgyexmphhufhqa48agfwq.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%AD%A3%E4%B9%89%E8%8B%B1%E9%9B%84%E7%9A%84%E5%87%AF%E6%97%8B.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "汇流",
+        "name": "汇流",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n汇流\n行动牌\n天赋\n快速行动：装备给我方的水形幻人，使其附属元素生命·水。（角色总是附着水元素，并且免疫水元素伤害。持续回合：2）装备有此牌的水形幻人在场时，我方宣布结束后，如果所附属角色生命值不低于3，则所附属角色受到2点穿透伤害，召唤1个独立的半幻人。（牌组中包含水形幻人，才能加入牌组）\n2\n描述：\n水形幻人·汇流「曾有无数的意志消融在水中，但水中原本就与宇宙一样充满了渴求被诞下的灵魂。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度水形幻人中完成挑战目标后获取。\n实装版本：\n月之二",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B1%87%E6%B5%81",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/19/i99yf5ehk2jv1gk03cxam1c5dqg9op2.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B1%87%E6%B5%81.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "温敷战术包扎",
+        "name": "温敷战术包扎",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n温敷战术包扎\n行动牌\n天赋\n快速行动：装备给我方的伊法，治疗我方受伤最多的角色1点。装备有此牌的伊法在场时，我方触发风元素相关反应或感电反应后，治疗我方受伤最多的角色1点。（每回合2次）（牌组中包含伊法，才能加入牌组）\n1\n描述：\n伊法·温敷战术包扎「…晓时枕貘醒春风。」\n获取方式：\n在猫尾酒馆中邀请伊法进行对局，完成相应挑战目标后获取。\n实装版本：\n月之二",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%B8%A9%E6%95%B7%E6%88%98%E6%9C%AF%E5%8C%85%E6%89%8E",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/2/2d/sy1u56wp7v8esh1gsfuxo88936acpje.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%B8%A9%E6%95%B7%E6%88%98%E6%9C%AF%E5%8C%85%E6%89%8E.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "罔极盛怒",
+        "name": "罔极盛怒",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n罔极盛怒\n行动牌\n天赋\n快速行动：装备给我方的蚀灭的源焰之主。敌方打出名称不存在于本局最初牌组的牌时：所附属角色获得1点充能，下次造成的伤害+1。（每回合1次）（牌组中包含蚀灭的源焰之主，才能加入牌组）\n1\n描述：\n蚀灭的源焰之主·罔极盛怒「漆黑的福音令其永困于生命的最后一日，无穷的怒火吞没所有的理智，此刻，唯有战意不遑宁息，燃烧不止。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度蚀灭的源焰之主中完成挑战目标后获取。\n实装版本：\n月之一",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%BD%94%E6%9E%81%E7%9B%9B%E6%80%92",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/4f/iy0jklgnb38cqhy3gjwqqvu3kmexj21.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%BD%94%E6%9E%81%E7%9B%9B%E6%80%92.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "饕噬尽吞",
+        "name": "饕噬尽吞",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n饕噬尽吞\n行动牌\n天赋\n快速行动：装备给我方的贪食匿叶龙山王，敌方抓1张牌，然后我方窃取1张原本元素骰费用最高的对方手牌。我方打出名称不存在于本局最初牌组的牌时：触发贪食之王1次。（每回合1次）（牌组中包含贪食匿叶龙山王，才能加入牌组）\n1\n描述：\n贪食匿叶龙山王·饕噬尽吞「有部族人认为，它有着现在这样的体态，是与绒翼龙的『暴君』一般，拥有着特殊的体质…但也许只是因为它活得太长，而吃得也实在太多了的缘故。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度贪食匿叶龙山王中完成挑战目标后获取。\n实装版本：\n5.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E9%A5%95%E5%99%AC%E5%B0%BD%E5%90%9E",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/ce/k1y7efogcijqrezqbv97koizuwdz5xs.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E9%A5%95%E5%99%AC%E5%B0%BD%E5%90%9E.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "「人之名」解放",
+        "name": "「人之名」解放",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n「人之名」解放\n行动牌\n天赋\n从3张驰轮车中挑选张加入手牌。我方打出特技牌后：若可能，玛薇卡恢复1点「夜魂值」。（每回合1次）（牌组中包含玛薇卡，才能加入牌组）\n1\n描述：\n玛薇卡·「人之名」解放「恭听太阳的轰鸣！」\n获取方式：\n在猫尾酒馆中邀请玛薇卡进行对局，完成相应挑战目标后获取。\n实装版本：\n5.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E3%80%8C%E4%BA%BA%E4%B9%8B%E5%90%8D%E3%80%8D%E8%A7%A3%E6%94%BE",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/6/66/7vbnh6ht2023ryqimitysgo49fdpjke.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E3%80%8C%E4%BA%BA%E4%B9%8B%E5%90%8D%E3%80%8D%E8%A7%A3%E6%94%BE.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "五重天的寒雨",
+        "name": "五重天的寒雨",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n五重天的寒雨\n行动牌\n天赋\n敌方受到冻结或融化反应伤害后：我方下2次造成的水元素伤害和火元素伤害+1，并使茜特菈莉获得1点「夜魂值」。（每回合1次）（牌组中包含茜特菈莉，才能加入牌组）\n2\n描述：\n茜特菈莉·五重天的寒雨「茜特拉琳、伊兹帕帕，给我上！」\n获取方式：\n在猫尾酒馆中邀请茜特菈莉进行对局，完成相应挑战目标后获取。\n实装版本：\n5.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BA%94%E9%87%8D%E5%A4%A9%E7%9A%84%E5%AF%92%E9%9B%A8",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/1/11/psotnzrjy0r9zuqdefrgb4148upwqjm.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BA%94%E9%87%8D%E5%A4%A9%E7%9A%84%E5%AF%92%E9%9B%A8.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "巡日塔门书",
+        "name": "巡日塔门书",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n巡日塔门书\n行动牌\n天赋\n我方赛索斯获得1点充能。我方赛索斯因黑鸢的密喻扣除充能后，获得1点充能。（每回合1次）(牌组中包含赛索斯，才能加入牌组)\n1\n描述：\n赛索斯·巡日塔门书「阿赫玛尔的遗荣！」\n获取方式：\n在猫尾酒馆中邀请那维莱特进行对局，完成相应挑战目标后获取。\n实装版本：\n5.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%B7%A1%E6%97%A5%E5%A1%94%E9%97%A8%E4%B9%A6",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/e0/isv6kra26ys0empgj29228hskftfia9.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%B7%A1%E6%97%A5%E5%A1%94%E9%97%A8%E4%B9%A6.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "夜域赐礼·团结炉心",
+        "name": "夜域赐礼·团结炉心",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Geo"
+            }
+        ],
+        "description": "装备牌\n夜域赐礼·团结炉心\n行动牌\n天赋\n我方冲天转转或冲天转转·脱离触发效果后，抓1张牌。（每回合1次）\n（牌组中包含卡齐娜，才能加入牌组）\n1\n描述：\n卡齐娜·团结炉心「清退！」\n获取方式：\n在猫尾酒馆中邀请卡齐娜进行对局，完成相应挑战目标后获取。\n实装版本：\n5.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A4%9C%E5%9F%9F%E8%B5%90%E7%A4%BC%C2%B7%E5%9B%A2%E7%BB%93%E7%82%89%E5%BF%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/0d/4aja7uzjpr1gbrq40zt56b31kwf4fpe.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A4%9C%E5%9F%9F%E8%B5%90%E7%A4%BC%C2%B7%E5%9B%A2%E7%BB%93%E7%82%89%E5%BF%83.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "茉洁香迹",
+        "name": "茉洁香迹",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n茉洁香迹\n行动牌\n天赋\n所附属角色造成的物理伤害变为草元素伤害。装备有此牌的艾梅莉埃普通攻击后：我方最高等级的「柔灯之匣」立刻行动1次。（每回合1次）（牌组中包含艾梅莉埃，才能加入牌组）\n2\n描述：\n艾梅莉埃·茉洁香迹「予我辉光。」\n获取方式：\n在猫尾酒馆中邀请艾梅莉埃进行对局，完成相应挑战目标后获取。\n实装版本：\n5.5",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%8C%89%E6%B4%81%E9%A6%99%E8%BF%B9",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/30/blitv9zv11i4dt9vc0y6hosm5qj0q6c.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%8C%89%E6%B4%81%E9%A6%99%E8%BF%B9.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "夜域赐礼·索报皆偿",
+        "name": "夜域赐礼·索报皆偿",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n夜域赐礼·索报皆偿\n行动牌\n天赋\n装备有此牌的基尼奇切换至前台或使用悬猎·游骋高狩时：若我方手牌不多于对方，则窃取1张原本元素骰费用最高的对方手牌，然后对手抓1张牌。(每回合1次)(牌组中包含基尼奇，才能加入牌组)\n1\n描述：\n基尼奇·索报皆偿「报偿夜神。」\n获取方式：\n在猫尾酒馆中邀请基尼奇进行对局，完成相应挑战目标后获取。\n实装版本：\n5.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A4%9C%E5%9F%9F%E8%B5%90%E7%A4%BC%C2%B7%E7%B4%A2%E6%8A%A5%E7%9A%86%E5%81%BF",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/7/79/7rgypdpvjrdhjv43ej3pfye0eaj0f5i.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A4%9C%E5%9F%9F%E8%B5%90%E7%A4%BC%C2%B7%E7%B4%A2%E6%8A%A5%E7%9A%86%E5%81%BF.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "夜域赐礼·波涛顶底",
+        "name": "夜域赐礼·波涛顶底",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n夜域赐礼·波涛顶底\n行动牌\n天赋\n装备有此牌的玛拉妮切换为「出战角色」时：触发1个随机我方「召唤物」的「结束阶段」效果。（每回合1次）（牌组中包含玛拉妮，才能加入牌组）\n1\n描述：\n玛拉妮·波涛顶底「巨浪——哗啦哗啦~」\n获取方式：\n在猫尾酒馆中邀请玛拉妮进行对局，完成相应挑战目标后获取。\n实装版本：\n5.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%A4%9C%E5%9F%9F%E8%B5%90%E7%A4%BC%C2%B7%E6%B3%A2%E6%B6%9B%E9%A1%B6%E5%BA%95",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/08/q2mc55ayvi1ngnkz0ayhicebiqit7ch.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%A4%9C%E5%9F%9F%E8%B5%90%E7%A4%BC%C2%B7%E6%B3%A2%E6%B6%9B%E9%A1%B6%E5%BA%95.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "侵雷重闪",
+        "name": "侵雷重闪",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n侵雷重闪\n行动牌\n天赋\n入场时：如果装备有此牌的深渊咏者·紫电已触发过雷之新生，则使敌方出战角色失去1点充能。装备有此牌的深渊咏者·紫电被击倒或触发雷之新生时：弃置此牌，使敌方出战角色失去1点充能。（牌组中包含深渊咏者·紫电，才能加入牌组）\n1\n描述：\n深渊咏者·侵雷重闪「以狂雷将冥冥长夜所扭曲的深黑智慧，灌入不信者的心中，以无边的紫电，昭告侵蚀人智的伟大力量的存在。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊咏者·紫电中完成挑战目标后获取。\n实装版本：\n5.1",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BE%B5%E9%9B%B7%E9%87%8D%E9%97%AA",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/c/c2/766fssh30h71zljk9mfrfz9fzwp3wab.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BE%B5%E9%9B%B7%E9%87%8D%E9%97%AA.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "尖兵协同战法",
+        "name": "尖兵协同战法",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n尖兵协同战法\n行动牌\n天赋\n队伍中包含火元素角色和雷元素角色且不包含其他元素的角色，才能打出：将此牌装备给夏沃蕾。装备有此牌的夏沃蕾在场，敌方角色受到超载反应伤害后：我方接下来造成的2次火元素伤害或雷元素伤害+1。（包括扩散反应造成的火元素伤害或雷元素伤害）（牌组中包含夏沃蕾，才能加入牌组）\n2\n描述：\n夏沃蕾·尖兵协同战法「特巡队专门应对各类危急凶案和恶劣罪犯，所以，我们在执法时会相对…强硬一些。」\n获取方式：\n在猫尾酒馆中邀请夏沃蕾进行对局，完成相应挑战目标后获取。\n实装版本：\n4.8",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E5%B0%96%E5%85%B5%E5%8D%8F%E5%90%8C%E6%88%98%E6%B3%95",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/06/95yo8qyv7xvtsl3nxzdr1knncg47b19.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E5%B0%96%E5%85%B5%E5%8D%8F%E5%90%8C%E6%88%98%E6%B3%95.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "万千子嗣",
+        "name": "万千子嗣",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Dendro"
+            }
+        ],
+        "description": "装备牌\n万千子嗣\n行动牌\n天赋\n入场时：生成4张唤醒眷属，随机置入我方牌库。装备有此牌的阿佩普的绿洲守望者在场时：我方增殖生命体造成的伤害+1。（牌组中包含阿佩普的绿洲守望者，才能加入牌组）\n2\n描述：\n阿佩普的绿洲守望者·万千子嗣阿佩普曾与诸多子嗣一同在芳草之海、百尺巨木与千里之藤蔓中，如游鱼穿行于水。直到最终草木枯萎化为尘埃，如同砂砾般渺小的诸多生灵在它原本的土地上建立起脆弱的城国。阿佩普曾与诸多子嗣一同令沙海如沸水般翻腾，将城楼如落叶般吹散。直到新的沙海之王与失去故土的王相互和解，从此日光之下的沙丘都属于人与神，而龙的绿洲留在龙的心中。阿佩普曾与诸多子嗣一同分享进化的知识，因为流水不腐，而朽木必定倾倒。直到最终它践行了与沙之王的约定得到了终极的智慧，从此它只能看见终末的风景，漫无边际的末日…\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度阿佩普的绿洲守望者中完成挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%B8%87%E5%8D%83%E5%AD%90%E5%97%A3",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f4/nofo5lztjga7q8b3fzjikdjskd6o51d.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%B8%87%E5%8D%83%E5%AD%90%E5%97%A3.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "亡雷凝蓄",
+        "name": "亡雷凝蓄",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n亡雷凝蓄\n行动牌\n天赋\n入场时：生成1张噬骸能量块，置入我方手牌。装备有此牌的圣骸毒蝎在场，我方打出噬骸能量块后：抓1张牌，然后生成1张噬骸能量块，随机置入我方牌库中。（牌组中包含圣骸毒蝎，才能加入牌组）\n1\n描述：\n圣骸毒蝎·亡雷凝蓄生物有其进化之法则，而圣骸兽的法则则是拥有足够的运气，能在同族之前发现在遥远过去就已亡殁的强大生灵遗骸。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度圣骸毒蝎中完成挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BA%A1%E9%9B%B7%E5%87%9D%E8%93%84",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/fe/bbtkvjl3lhydva7dctz3zmnh0afgg2q.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BA%A1%E9%9B%B7%E5%87%9D%E8%93%84.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "亡风啸卷",
+        "name": "亡风啸卷",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Anemo"
+            }
+        ],
+        "description": "装备牌\n亡风啸卷\n行动牌\n天赋\n入场时：生成1张噬骸能量块，置入我方手牌。装备有此牌的圣骸飞蛇在场，我方打出噬骸能量块后：本回合中，我方下次切换角色后生成1个出战角色类型的元素骰。（牌组中包含圣骸飞蛇，才能加入牌组）\n1\n描述：\n圣骸飞蛇·亡风啸卷即使获得了操使元素的异能，圣骸兽自身也无法将体内不朽的亡骸彻底消化，而是与其力量融合异变…\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度圣骸飞蛇中完成挑战目标后获取。\n实装版本：\n4.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%BA%A1%E9%A3%8E%E5%95%B8%E5%8D%B7",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/e/ec/geucqmtx7wtkp4y0miuaql0ipax835j.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%BA%A1%E9%A3%8E%E5%95%B8%E5%8D%B7.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "暗流涌动",
+        "name": "暗流涌动",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Hydro"
+            }
+        ],
+        "description": "装备牌\n暗流涌动\n行动牌\n天赋\n入场时：如果装备有此牌的深渊使徒·激流已触发过水之新生，则在对方场上生成暗流的诅咒。装备有此牌的深渊使徒·激流被击倒或触发水之新生时：在对方场上生成暗流的诅咒。（牌组中包含深渊使徒·激流，才能加入牌组）\n1\n描述：\n深渊使徒·暗流涌动「毁灭，不可阻挡！」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊使徒·激流中完成挑战目标后获取。\n实装版本：\n4.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%9A%97%E6%B5%81%E6%B6%8C%E5%8A%A8",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/4/4b/fwhkfak6hrq3rm9d10ndcvvl1b64qzy.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%9A%97%E6%B5%81%E6%B6%8C%E5%8A%A8.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "熔火铁甲",
+        "name": "熔火铁甲",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n熔火铁甲\n行动牌\n天赋\n入场时：对装备有此牌的铁甲熔火帝皇附着火元素。我方除重甲蟹壳以外的护盾状态或护盾出战状态被移除后：装备有此牌的铁甲熔火帝皇附属2层重甲蟹壳。（每回合1次）（牌组中包含铁甲熔火帝皇，才能加入牌组）\n1\n描述：\n铁甲熔火帝皇·熔火铁甲「设想这样的世界：将提瓦特所有的人都消除，无限成长下去的铁甲熔火帝皇终究会将沫芒宫穿在身上，作为最为华美的白石铠甲吧。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊使徒·激流中完成挑战目标后获取。\n实装版本：\n4.6",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%86%94%E7%81%AB%E9%93%81%E7%94%B2",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/2/22/m9yueosdzcl5shstwgfsiqt8k97yok0.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%86%94%E7%81%AB%E9%93%81%E7%94%B2.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "严霜棱晶",
+        "name": "严霜棱晶",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Cryo"
+            }
+        ],
+        "description": "装备牌\n严霜棱晶\n行动牌\n天赋\n我方出战角色为无相之冰时，才能打出：使其附属冰晶核心。装备有此牌的无相之冰触发冰晶核心后：对敌方出战角色附属严寒。（牌组中包含无相之冰，才能加入牌组）\n1\n描述：\n无相之冰·严霜棱晶即便有着高度稳定的形态与机械般的行动方式，也需要谨慎屏护要害…\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度无相之冰中完成挑战目标后获取。\n实装版本：\n4.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E4%B8%A5%E9%9C%9C%E6%A3%B1%E6%99%B6",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/94/id5bp8wuv7q6hxue226c2gvtahed345.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E4%B8%A5%E9%9C%9C%E6%A3%B1%E6%99%B6.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "明珠固化",
+        "name": "明珠固化",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 0,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n明珠固化\n行动牌\n天赋\n我方出战角色为千年珍珠骏麟时，才能打出：入场时，使千年珍珠骏麟附属可用次数为1的原海明珠；如果已附属原海明珠，则使其可用次数+1。装备有此牌的千年珍珠骏麟所附属的原海明珠抵消召唤物伤害时，改为每回合2次不消耗可用次数。（牌组中包含千年珍珠骏麟，才能加入牌组）\n0\n描述：\n千年珍珠骏麟·明珠固化异海珍珠，原海古雷…幻兽形姿的海马孤王并没有华丽或破败的王庭，有的只是让原海异种们惶恐退避的威能…\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度千年珍珠骏麟中完成挑战目标后获取。\n实装版本：\n4.4",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E6%98%8E%E7%8F%A0%E5%9B%BA%E5%8C%96",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/3/38/17jsdnu457jm7f74sbwgc19dwhkvrsy.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E6%98%8E%E7%8F%A0%E5%9B%BA%E5%8C%96.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "苦痛奉还",
+        "name": "苦痛奉还",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 3,
+                "type": "Matching"
+            }
+        ],
+        "description": "装备牌\n苦痛奉还\n行动牌\n天赋\n我方出战角色为「女士」时，才能打出：入场时，生成3个「女士」当前元素类型的元素骰。角色受到至少为3点的伤害时：抵消1点伤害，然后根据「女士」的形态对敌方出战角色附属严寒或炽热。（每回合1次）（牌组中包含「女士」，才能加入牌组）\n3\n描述：\n「女士」·苦痛奉还「将痛楚…与你分享。」\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度「女士」中完成挑战目标后获取。\n实装版本：\n4.3",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%8B%A6%E7%97%9B%E5%A5%89%E8%BF%98",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/9/9d/dxsay4mtixovhgpqulrcqkv9at02bzw.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%8B%A6%E7%97%9B%E5%A5%89%E8%BF%98.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "脉冲的魔女",
+        "name": "脉冲的魔女",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 1,
+                "type": "Electro"
+            }
+        ],
+        "description": "装备牌\n脉冲的魔女\n行动牌\n天赋\n切换到装备有此牌的丽莎后，使敌方出战角色附属引雷。（每回合1次）（牌组中包含丽莎，才能加入牌组）\n1\n描述：\n丽莎·脉冲的魔女作为遍历万千卷藏的图书管理员，当然能轻松记住制胜的技巧…\n获取方式：\n在猫尾酒馆中邀请丽莎进行对局，完成相应挑战目标后获取。\n实装版本：\n4.0",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E8%84%89%E5%86%B2%E7%9A%84%E9%AD%94%E5%A5%B3",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/0/01/h0z3tpocovskzbcpmtadg0ed51p1rz4.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E8%84%89%E5%86%B2%E7%9A%84%E9%AD%94%E5%A5%B3.png"
+    },
+    {
+        "card_type": "Action",
+        "id": "烬火重燃",
+        "name": "烬火重燃",
+        "sub_type": "Equipment",
+        "cost": [
+            {
+                "count": 2,
+                "type": "Pyro"
+            }
+        ],
+        "description": "装备牌\n烬火重燃\n行动牌\n天赋\n入场时：如果装备有此牌的深渊咏者·渊火已触发过火之新生，就立刻弃置此牌，为角色附属渊火加护。装备有此牌的深渊咏者·渊火触发火之新生时：弃置此牌，为角色附属渊火加护。（牌组中包含深渊咏者·渊火，才能加入牌组）\n2\n描述：\n深渊咏者·烬火重燃递播恩典之路，并非一路平顺。\n获取方式：\n在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊咏者·渊火中完成挑战目标后获取。\n实装版本：\n3.7",
+        "wiki_url": "https://wiki.biligame.com/ys/%E5%8D%A1%E7%89%8C%EF%BC%9A%E7%83%AC%E7%81%AB%E9%87%8D%E7%87%83",
+        "image": "https://patchwiki.biligame.com/images/ys/thumb/f/f2/ergw2t6j6cpfkynfvczpex1oqsqis7c.png/60px-%E5%8D%A1%E7%89%8C-%E8%A3%85%E5%A4%87%E7%89%8C-%E7%83%AC%E7%81%AB%E9%87%8D%E7%87%83.png"
+    }
+]

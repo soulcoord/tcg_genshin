@@ -19,6 +19,10 @@ const CARD_DATA_FILES = ['\u7e3d\u89bd (1).csv', '\u7e3d\u89bd (2).csv', '\u7e3d
 const cardImageMap = new Map();
 const cardPageMap = new Map();
 let cardDataLoaded = false;
+const CHARACTER_DATA_FILE = 'role.json';
+const characterSkillMap = new Map();
+let characterDataLoaded = false;
+
 
 export function initView() {
     console.log("Initializing View (Genshin Style V3)...");
@@ -37,12 +41,40 @@ export function initView() {
         })
         .catch((err) => {
             console.warn("Card CSV load failed, fallback to text-only cards.", err);
+        });
+
+    loadCharacterData()
+        .then(() => {
+            renderSkillPanel();
+            initDeckSelection();
+        })
+        .catch((err) => {
+            console.warn("Character JSON load failed, skills panel will be empty.", err);
         }); // 初始化时更新一次计数
 
     const btnEnd = document.getElementById('btn-end-turn');
     if (btnEnd) {
         btnEnd.addEventListener('click', () => {
-            globalBus.emit('ACTION_END_TURN');
+            globalBus.emit('ACTION_END_ROUND');
+        });
+    }
+
+    const btnNormal = document.querySelector('.skill-btn.normal-atk');
+    if (btnNormal) {
+        btnNormal.addEventListener('click', () => {
+            globalBus.emit('ACTION_USE_SKILL', { skillId: btnNormal.dataset.skillId || 'normal' });
+        });
+    }
+    const btnSkill = document.querySelector('.skill-btn.elem-skill');
+    if (btnSkill) {
+        btnSkill.addEventListener('click', () => {
+            globalBus.emit('ACTION_USE_SKILL', { skillId: btnSkill.dataset.skillId || 'skill' });
+        });
+    }
+    const btnBurst = document.querySelector('.skill-btn.elem-burst');
+    if (btnBurst) {
+        btnBurst.addEventListener('click', () => {
+            globalBus.emit('ACTION_USE_SKILL', { skillId: btnBurst.dataset.skillId || 'burst' });
         });
     }
 
@@ -91,7 +123,7 @@ async function loadCardData() {
         const idxText = header.indexOf('text');
         const idxImage = header.indexOf('image');
         const idxPng = header.indexOf('png_url');
-        const idxPage = header.indexOf('page_url');
+        const idxPage = header.indexOf('image');
 
         rows.forEach((row, index) => {
             if (index === 0) return;
@@ -104,6 +136,280 @@ async function loadCardData() {
         });
     });
     cardDataLoaded = true;
+}
+
+
+async function loadCharacterData() {
+    if (characterDataLoaded) return;
+    const res = await fetch(encodeURI(CHARACTER_DATA_FILE));
+    const data = await res.json();
+    data.forEach((item) => {
+        if (item && item.card_type === 'Character' && item.name) {
+            characterSkillMap.set(item.name, item.skills || []);
+        }
+    });
+    characterDataLoaded = true;
+}
+
+
+function initDeckSelection() {
+    const overlay = document.getElementById('deck-select');
+    const listEl = document.getElementById('deck-select-list');
+    const startBtn = document.getElementById('btn-deck-start');
+    const titleEl = overlay ? overlay.querySelector('.deck-select__title') : null;
+    if (!overlay || !listEl || !startBtn) return;
+
+    const characters = getCharacterList();
+    const selected = new Set();
+
+    const updateTitle = () => {
+        if (titleEl) titleEl.textContent = `??????(${selected.size}/3)`;
+    };
+
+    listEl.innerHTML = '';
+    characters.forEach((c) => {
+        const card = document.createElement('div');
+        card.className = 'deck-card';
+        card.dataset.name = c.name;
+
+        const img = document.createElement('div');
+        img.className = 'deck-card__img';
+        const imageUrl = resolveCardImageUrl(c.name) || '';
+        if (imageUrl) img.style.backgroundImage = `url("${imageUrl}")`;
+
+        const name = document.createElement('div');
+        name.className = 'deck-card__name';
+        name.textContent = c.name;
+
+        card.appendChild(img);
+        card.appendChild(name);
+
+        card.addEventListener('click', () => {
+            if (selected.has(c.name)) {
+                selected.delete(c.name);
+                card.classList.remove('selected');
+            } else if (selected.size < 3) {
+                selected.add(c.name);
+                card.classList.add('selected');
+            }
+            updateTitle();
+        });
+
+        listEl.appendChild(card);
+    });
+
+    updateTitle();
+
+    startBtn.addEventListener('click', () => {
+        if (selected.size !== 3) return;
+        const chosen = characters.filter(c => selected.has(c.name));
+        setupPlayersFromSelection(chosen, characters);
+        overlay.classList.add('hidden');
+        renderPlayerActiveChar();
+        renderOpponent();
+        renderHand();
+        renderSkillPanel();
+            initDeckSelection();
+        globalBus.emit('DECK_READY');
+    });
+}
+
+function setupPlayersFromSelection(chosen, allCharacters) {
+    const p1 = gameState.players.p1;
+    const p2 = gameState.players.p2;
+
+    const chosenNames = new Set(chosen.map(c => c.name));
+    const remaining = allCharacters.filter(c => !chosenNames.has(c.name));
+
+    const p1Chars = chosen.slice(0, 3).map(c => createCharacterFromJson(c));
+    const p2Chars = pickRandom(remaining, 3).map(c => createCharacterFromJson(c));
+
+    p1.characters = toCharacterMap(p1Chars);
+    p2.characters = toCharacterMap(p2Chars);
+
+    p1.activeCharId = p1Chars[0]?.id || Object.keys(p1.characters)[0];
+    p2.activeCharId = p2Chars[0]?.id || Object.keys(p2.characters)[0];
+
+    p1.hasEndedRound = false;
+    p2.hasEndedRound = false;
+    p1.isFirst = true;
+    p2.isFirst = false;
+
+    p1.dice = [];
+    p2.dice = [];
+}
+
+function getCharacterList() {
+    const list = [];
+    characterSkillMap.forEach((skills, name) => {
+        list.push({ name, skills });
+    });
+    return list;
+}
+
+function createCharacterFromJson(data) {
+    return {
+        id: `char_${slugify(data.name)}`,
+        name: data.name,
+        hp: data.hp || 10,
+        maxHp: data.hp || 10,
+        element: data.element || 'Physical',
+        energy: 0,
+        maxEnergy: 3,
+        isAlive: true,
+        statuses: [],
+        equipment: [],
+        elementAttachment: null
+    };
+}
+
+function toCharacterMap(chars) {
+    const map = {};
+    chars.forEach(c => { map[c.id] = c; });
+    return map;
+}
+
+function pickRandom(arr, count) {
+    const pool = [...arr];
+    const out = [];
+    while (pool.length && out.length < count) {
+        const idx = Math.floor(Math.random() * pool.length);
+        out.push(pool.splice(idx, 1)[0]);
+    }
+    return out;
+}
+
+function slugify(name) {
+    return name
+        .toLowerCase()
+        .replace(/\s+/g, '_')
+        .replace(/[^a-z0-9_一-龥]/g, '');
+}
+
+function renderSkillPanel() {
+    const p1Char = gameState.players.p1.characters[gameState.players.p1.activeCharId];
+    if (!p1Char) return;
+    const skills = characterSkillMap.get(p1Char.name) || [];
+    renderSkillButtons(skills);
+    renderSkillList(skills);
+}
+
+function renderSkillButtons(skills) {
+    const normalBtn = document.querySelector('.skill-btn.normal-atk');
+    const skillBtn = document.querySelector('.skill-btn.elem-skill');
+    const burstBtn = document.querySelector('.skill-btn.elem-burst');
+
+    const slots = { normal: null, skill: null, burst: null };
+    skills.forEach((s) => {
+        const type = classifySkill(s);
+        if (type && !slots[type]) slots[type] = s;
+    });
+
+    // Fallback by index if types missing
+    if (!slots.normal && skills[0]) slots.normal = skills[0];
+    if (!slots.skill && skills[1]) slots.skill = skills[1];
+    if (!slots.burst && skills[2]) slots.burst = skills[2];
+
+    applySkillToButton(normalBtn, slots.normal, 'A');
+    applySkillToButton(skillBtn, slots.skill, 'E');
+    applySkillToButton(burstBtn, slots.burst, 'Q');
+}
+
+function applySkillToButton(btn, skill, fallbackLabel) {
+    if (!btn) return;
+    const iconEl = btn.querySelector('.skill-icon');
+    const badgeEl = btn.querySelector('.skill-cost-badge');
+
+    btn.dataset.skillId = skill ? (skill.name || '') : '';
+
+    if (iconEl) {
+        iconEl.innerHTML = '';
+        if (skill && skill.icon) {
+            const img = document.createElement('img');
+            img.src = skill.icon;
+            img.alt = skill.name || '';
+            img.className = 'skill-icon__img';
+            iconEl.appendChild(img);
+        } else {
+            iconEl.textContent = fallbackLabel;
+        }
+    }
+
+    if (badgeEl) {
+        const cost = skill ? calcSkillCost(skill) : '';
+        badgeEl.textContent = cost !== null ? String(cost) : '';
+    }
+
+    if (skill) {
+        btn.title = `${skill.name}
+${skill.description || ''}`.trim();
+    }
+}
+
+function renderSkillList(skills) {
+    const listEl = document.getElementById('skill-list');
+    if (!listEl) return;
+    listEl.innerHTML = '';
+
+    if (!skills.length) {
+        listEl.textContent = '??????';
+        return;
+    }
+
+    skills.forEach((skill) => {
+        const item = document.createElement('div');
+        item.className = 'skill-item';
+
+        const icon = document.createElement('img');
+        icon.className = 'skill-item__icon';
+        icon.src = skill.icon || '';
+        icon.alt = skill.name || '';
+
+        const info = document.createElement('div');
+        info.className = 'skill-item__info';
+
+        const title = document.createElement('div');
+        title.className = 'skill-item__name';
+        title.textContent = skill.name || '';
+
+        const type = document.createElement('div');
+        type.className = 'skill-item__type';
+        type.textContent = getSkillTypeLabel(skill);
+
+        const desc = document.createElement('div');
+        desc.className = 'skill-item__desc';
+        desc.textContent = (skill.description || '').replace(/\s+\d+\s*$/g, '').trim();
+
+        info.appendChild(title);
+        info.appendChild(type);
+        info.appendChild(desc);
+
+        item.appendChild(icon);
+        item.appendChild(info);
+
+        listEl.appendChild(item);
+    });
+}
+
+function getSkillTypeLabel(skill) {
+    const desc = skill?.description || '';
+    if (desc.includes('????')) return '????';
+    if (desc.includes('????')) return '????';
+    if (desc.includes('????')) return '????';
+    return skill?.type || '??';
+}
+
+function classifySkill(skill) {
+    const desc = skill?.description || '';
+    if (desc.includes('????')) return 'normal';
+    if (desc.includes('????')) return 'skill';
+    if (desc.includes('????')) return 'burst';
+    return null;
+}
+
+function calcSkillCost(skill) {
+    if (!skill || !Array.isArray(skill.cost)) return null;
+    return skill.cost.reduce((sum, c) => sum + (Number(c.count) || 0), 0);
 }
 
 function parseCsv(text) {
@@ -209,7 +515,8 @@ function updateTurnPointer(phase) {
 function checkGameOver(targetChar) {
     if (targetChar.hp <= 0) {
         setTimeout(() => {
-            alert(targetChar.id === 'char_hilichurl' ? "胜利！" : "失败！");
+            const isOpponent = Boolean(gameState.players.p2.characters[targetChar.id]);
+            alert(isOpponent ? "胜利！" : "失败！");
             globalBus.emit('GAME_OVER');
         }, 300);
     }

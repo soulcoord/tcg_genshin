@@ -13,7 +13,35 @@ import { CONSTANTS } from './constants.js';
 console.log(">>> 游戏引擎启动中...");
 initView();
 
-// 游戏初始化流程
+function shuffleDeck(deck) {
+    const arr = [...deck];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+function drawCards(player, count) {
+    const hand = Array.isArray(player.hand) ? [...player.hand] : [];
+    const deck = Array.isArray(player.deck) ? [...player.deck] : [];
+    for (let i = 0; i < count && deck.length > 0; i++) {
+        if (hand.length >= 10) break;
+        hand.push(deck.shift());
+    }
+    player.deck = deck;
+    player.hand = hand;
+}
+
+// ??????????
+globalBus.on('DECK_READY', () => {
+    gameState.players.p1.deck = shuffleDeck(gameState.players.p1.deck);
+    gameState.players.p2.deck = shuffleDeck(gameState.players.p2.deck);
+    drawCards(gameState.players.p1, 5);
+    drawCards(gameState.players.p2, 5);
+});
+
+// 延迟启动
 setTimeout(() => {
     console.log(">>> 游戏开始，抽取初始手牌 (5张)");
     GameMechanics.drawCards(gameState.players.p1, 5);

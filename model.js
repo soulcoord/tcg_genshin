@@ -54,9 +54,9 @@ const initialState = {
 
             // 角色列表 (固定3名)
             characters: {
-                'char_diluc': createCharacter('char_diluc', '迪卢克', 'Pyro'),
-                'char_kaeya': createCharacter('char_kaeya', '凯亚', 'Cryo'),
-                'char_sucrose': createCharacter('char_sucrose', '砂糖', 'Anemo')
+                'char_diluc': createCharacter('char_diluc', '\u8fea\u5362\u514b', 'Pyro', 10, 3),
+                'char_kaeya': createCharacter('char_kaeya', '凯亚', 'Cryo', 10, 2),
+                'char_sucrose': createCharacter('char_sucrose', '砂糖', 'Anemo', 10, 2)
             }
         },
         p2: {
@@ -73,9 +73,9 @@ const initialState = {
             supports: [],
 
             characters: {
-                'char_fischl': createCharacter('char_fischl', '菲谢尔', 'Electro'),
-                'char_collei': createCharacter('char_collei', '柯莱', 'Dendro'),
-                'char_oceanid': createCharacter('char_oceanid', '纯水精灵', 'Hydro')
+                'char_fischl': createCharacter('char_fischl', '\u83f2\u8c22\u5c14', 'Electro', 10, 3),
+                'char_collei': createCharacter('char_collei', '柯莱', 'Dendro', 10, 2),
+                'char_oceanid': createCharacter('char_oceanid', '纯水精灵', 'Hydro', 10, 3) // 模拟Boss/角色
             }
         }
     }
