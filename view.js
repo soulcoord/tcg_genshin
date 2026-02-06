@@ -14,7 +14,7 @@ const ELEMENT_CONFIG = {
     'Omni':    { color: '#FFFFFF', icon: 'https://placehold.co/100/FFFFFF/000?text=💎' }  // 万能
 };
 
-// 修正文件名乱码 (原乱码 '绺借' 推测为 '总览')
+// 修正文件名乱码
 const CARD_DATA_FILES = ['总览 (1).csv', '总览 (2).csv', '总览 (3).csv'];
 const cardImageMap = new Map();
 const cardPageMap = new Map();
