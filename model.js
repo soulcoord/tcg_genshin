@@ -2,16 +2,6 @@
 // 数据模型层：定义游戏初始状态
 import { globalBus } from './eventBus.js';
 
-// 定义初始卡组 (简化版，实际应有30张)
-const STARTING_DECK = [
-    { id: 'wp_wolf', name: "狼的末路", type: 'Weapon', cost: { count: 3, type: 'Matching' } },
-    { id: 'event_paimon', name: "派蒙", type: 'Support', cost: { count: 3, type: 'Same' } }, // 支援牌
-    { id: 'event_strategy', name: "运筹帷幄", type: 'Event', cost: { count: 1, type: 'Common' } },
-    { id: 'event_lisu', name: "刘苏", type: 'Support', cost: { count: 1, type: 'Matching' } },
-    { id: 'food_lotus', name: "\u83b2\u82b1\u9165", type: 'Event', cost: { count: 1, type: 'Common' } }, // 莲花酥
-    { id: 'event_bestest', name: "最好的伙伴!", type: 'Event', cost: { count: 2, type: 'Common' } },
-    // ... 填充更多卡牌
-];
 
 // 创建角色工厂函数
 const createCharacter = (id, name, element, maxHp = 10, maxEnergy = 3) => ({
